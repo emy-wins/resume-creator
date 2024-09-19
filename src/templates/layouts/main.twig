@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			{% block page_title %}{% endblock %}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+		<link rel="icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+	</head>
+	<body class="{% block body_class %}{% endblock %} light">
+		{% include '../components/header.twig' %}
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+		{% include '../components/footer.twig' %}
+		<script type="module" src="assets/js/detects.js"></script>
+		<script type="module" src="assets/js/another-file.js"></script>
+		<script src="assets/js/plugins.js"></script>
+		<script type="module" src="assets/js/main.js"></script>
+		<script type="module" src="assets/js/components.js"></script>
+	</body>
+</html>
