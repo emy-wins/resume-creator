@@ -1,0 +1,52 @@
+header {
+    background-color: $white;
+    padding: 10px 0;
+
+    .header-logo {
+        width: 110px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .header-menu {
+        &__nav {
+            width: 100%;
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0;
+
+                li {
+                    a {
+                        text-transform: uppercase;
+                        color: $color-p;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    header {
+        .header-menu {
+            &__nav {
+                ul {
+                    li {
+                        a {
+                            padding-left: 30px;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

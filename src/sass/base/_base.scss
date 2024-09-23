@@ -9,13 +9,12 @@
     list-style: none;
     text-decoration: none;
     transition: 0.3s linear;
+    font-family: $font !important;
 }
-
 
 body {
     z-index: 0;
     background-color: $wt !important;
-    font-family: $font !important;
     padding: 0;
     margin: 0;
 }
@@ -40,12 +39,15 @@ button {
     background-color: unset;
 }
 
-h2 {
+h2,
+h3,
+h4 {
     text-transform: uppercase;
+    font-weight: 700 !important;
+    letter-spacing: 6px;
 }
 
 .btn-w {
-    background-color: $white;
     border: 0;
     outline: 0;
     color: $color-p;
@@ -54,10 +56,17 @@ h2 {
     padding: 10px 25px;
     border-radius: 9px;
 }
-.bg-perple{
-    background-color: $perpel;
+
+.bg-perple {
+    background-color: $perpel !important;
+    color: $white;
 }
-.row>*{
-    padding-right: calc(var(--bs-gutter-x)* 1.2)!important;
-    padding-left: calc(var(--bs-gutter-x)* 1.2)!important;
+
+.bg-perple-2 {
+    background-color: $perpel-2 !important;
+}
+
+.row>* {
+    padding-right: calc(var(--bs-gutter-x)* 1.2) !important;
+    padding-left: calc(var(--bs-gutter-x)* 1.2) !important;
 }
