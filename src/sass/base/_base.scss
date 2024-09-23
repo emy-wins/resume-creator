@@ -20,7 +20,12 @@ body {
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
+}
+@media(min-width:992px){
+    html {
+        font-size: 16px;
+    }
 }
 
 a {
@@ -50,11 +55,16 @@ h4 {
 .btn-w {
     border: 0;
     outline: 0;
-    color: $color-p;
+    font-size: 0.9rem;
     font-weight: 500;
     font-family: $font;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 9px;
+    text-transform: uppercase;
+}
+.btn-color-p{
+    color: $white;
+    background-color: $color-p;
 }
 
 .bg-perple {
@@ -65,7 +75,10 @@ h4 {
 .bg-perple-2 {
     background-color: $perpel-2 !important;
 }
-
+.btn-white-perple{
+    background-color: $white;
+    color: $perpel;
+}
 .row>* {
     padding-right: calc(var(--bs-gutter-x)* 1.2) !important;
     padding-left: calc(var(--bs-gutter-x)* 1.2) !important;

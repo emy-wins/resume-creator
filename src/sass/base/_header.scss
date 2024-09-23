@@ -1,9 +1,10 @@
 header {
     background-color: $white;
-    padding: 10px 0;
+    padding: 15px 0;
 
     .header-logo {
-        width: 110px;
+        width: 90px;
+        margin-bottom: 15px;
 
         img {
             width: 100%;
@@ -12,21 +13,105 @@ header {
         }
     }
 
+    .btn-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            height: 2.3px;
+            background-color: $color-p;
+            width: 30px;
+            border-radius: 5px;
+            margin-bottom: 6px;
+        }
+
+        span.two {
+            width: 40px;
+        }
+    }
+
+    .btn-toggle.open{
+        span.one {
+            transform: translateY(2px) rotate(-135deg);
+        }
+
+        span.two {
+            display: none;
+        }
+
+        span.tree {
+            transform: translateY(-7px) rotate(310deg);
+        }
+    }
+
     .header-menu {
+        border-top: 1px solid $color-p;
+        height: 0;
+        overflow: hidden;
+
         &__nav {
             width: 100%;
 
             ul {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                margin: 0;
+                padding: 0;
                 margin: 0;
 
                 li {
+                    padding: 5px 0;
+
                     a {
                         text-transform: uppercase;
                         color: $color-p;
                         font-weight: 500;
+                        letter-spacing: 2px;
+                    }
+
+                    a:hover {
+                        color: $perpel;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-menu.menu-active {
+        padding-top: 15px;
+        height: auto;
+    }
+}
+
+
+@media(min-width:992px) {
+    header {
+        .header-logo {
+            width: 110px;
+            margin-bottom: 0px;
+        }
+
+        .btn-toggle {
+            display: none;
+        }
+
+        .header-menu {
+            border-top: unset;
+            padding-top: 0px;
+            height: auto;
+
+            &__nav {
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    li {
+                        padding: 0;
+
+                        a {
+                            padding-left: 16px;
+                        }
                     }
                 }
             }
