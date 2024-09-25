@@ -32,7 +32,7 @@ header {
         }
     }
 
-    .btn-toggle.open{
+    .btn-toggle.open {
         span.one {
             transform: translateY(2px) rotate(-135deg);
         }
@@ -48,7 +48,7 @@ header {
 
     .header-menu {
         border-top: 1px solid $color-p;
-        height: 0;
+        //height: 0;
         overflow: hidden;
 
         &__nav {
@@ -60,7 +60,18 @@ header {
                 margin: 0;
 
                 li {
-                    padding: 5px 0;
+                    padding: 15px 0;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        top: 0px;
+                        color: red;
+                        left: 0;
+                        text-align: left;
+                        font-size: 0.8rem;
+                        text-shadow: 1px 1px 8px #ff0000b6;
+                    }
 
                     a {
                         text-transform: uppercase;
@@ -71,6 +82,22 @@ header {
 
                     a:hover {
                         color: $perpel;
+                    }
+                }
+
+                li.dropdown {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    &::after {
+                        content: "";
+                        background-image: url("../images/icons/select.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 23px;
+                        height: 23px;
+                        overflow: hidden;
                     }
                 }
             }
@@ -107,10 +134,14 @@ header {
                     align-items: center;
 
                     li {
-                        padding: 0;
-
                         a {
                             padding-left: 16px;
+                        }
+
+                        span {
+                            left: unset;
+                            right: 0;
+                            text-align: right;
                         }
                     }
                 }
