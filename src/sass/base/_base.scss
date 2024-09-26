@@ -48,7 +48,7 @@ button {
     background-color: unset;
     font-weight: 500;
     font-family: $font;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 h2,
@@ -77,6 +77,11 @@ h4 {
 .btn-color-p {
     color: $white;
     background-color: $color-p;
+
+    &:hover {
+        background-color: $white;
+        color: $color-p;
+    }
 }
 
 .bg-perple {
@@ -88,9 +93,14 @@ h4 {
     background-color: $perpel-2 !important;
 }
 
-.btn-white-perple {
+.btn-white-color-p {
     background-color: $white;
-    color: $perpel;
+    color: $color-p;
+
+    &:hover {
+        background-color: $perpel;
+        color: $white;
+    }
 }
 
 .row>* {
@@ -100,6 +110,10 @@ h4 {
 
 .text-color-p {
     color: $color-p;
+}
+
+.text-perpl {
+    color: $perpel;
 }
 
 .flx-center {
