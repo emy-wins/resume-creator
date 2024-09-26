@@ -1,0 +1,38 @@
+.s-banner-video {
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 1.8;
+        color: $color-p;
+        text-align: left;
+
+        span {
+            color: $perpel;
+            display: block;
+        }
+    }
+}
+
+.s-video {
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    border-radius: 12px;
+    background-color: $white;
+
+    .play-btn {
+        background-color: $perpel-42;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    button {
+        background-color: $perpel;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 100px rgba(168, 63, 57, 0);
+    }
+}
