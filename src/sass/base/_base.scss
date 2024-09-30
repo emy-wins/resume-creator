@@ -42,15 +42,16 @@ p {
 }
 
 .button,
+input[type="submit"],
 button {
-    border: 0;
+    border: 0 !important;
     outline: 0;
-    background-color: unset;
     font-weight: 500;
     font-family: $font;
     text-transform: uppercase !important;
 }
 
+h1,
 h2,
 h3,
 h4 {
@@ -91,6 +92,11 @@ h4 {
 
 .bg-perple-2 {
     background-color: $perpel-2 !important;
+}
+
+.bg-color-p {
+    background-color: $color-p !important;
+    color: $white;
 }
 
 .btn-white-color-p {
