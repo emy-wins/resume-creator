@@ -1,10 +1,3 @@
-.s-create-resume {
-    .row>* {
-        padding-right: calc(var(--bs-gutter-x) * .5) !important;
-        padding-left: calc(var(--bs-gutter-x) * .5) !important;
-    }
-}
-
 .menu-create {
     width: 100%;
     background-color: $white;
@@ -44,7 +37,7 @@
 
     .progress {
         background-color: $perpel;
-        width: 0%;
+        width: 15%;
     }
 
     .progress-step {
@@ -79,6 +72,43 @@
 
     h2 {
         text-transform: capitalize;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.upload-image {
+    position: relative;
+    z-index: 0;
+
+    &>input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        opacity: 0;
+    }
+}
+
+.image-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $wt;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+    img {
+        width: 60px;
+        height: auto;
+        object-fit: contain;
     }
 }
 

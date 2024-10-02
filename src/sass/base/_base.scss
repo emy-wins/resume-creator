@@ -71,7 +71,7 @@ h4 {
 .btn-w-big {
     font-size: 1rem;
     padding: 23px 54px;
-    border-radius: 9px;
+    border-radius: 12px;
     letter-spacing: 2px;
 }
 
@@ -109,10 +109,6 @@ h4 {
     }
 }
 
-.row>* {
-    padding-right: calc(var(--bs-gutter-x)* 1.2) !important;
-    padding-left: calc(var(--bs-gutter-x)* 1.2) !important;
-}
 
 .text-color-p {
     color: $color-p;
@@ -126,4 +122,38 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+input {
+    background-color: $wt;
+    padding: 0.7rem 0.9rem;
+    outline: 0;
+    border: 0;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    font-family: $font;
+    font-weight: normal;
+}
+
+input:focus::placeholder {
+    color: $black;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.flx-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
