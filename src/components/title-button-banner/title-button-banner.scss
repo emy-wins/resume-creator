@@ -1,7 +1,7 @@
 .s-banner {
-    padding: 40px 40px 60px;
+    padding: 30px 30px 60px;
     background-color: $color-p;
-    border-radius: 12px;
+    border-radius: 8px;
     margin: 50px 0;
     position: relative;
 
@@ -22,5 +22,12 @@
             height: 100%;
             object-fit: contain;
         }
+    }
+}
+
+@media(min-width:992px) {
+    .s-banner {
+        padding: 40px 60px 60px;
+        border-radius: 12px;
     }
 }

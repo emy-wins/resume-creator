@@ -61,6 +61,16 @@ h4 {
     line-height: 1.8 !important;
 }
 
+h2 {
+    font-size: 1.4rem;
+}
+
+@media(min-width:992px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 .btn-w {
     font-size: 0.9rem;
     padding: 15px 25px;
@@ -69,10 +79,18 @@ h4 {
 }
 
 .btn-w-big {
-    font-size: 1rem;
-    padding: 23px 54px;
-    border-radius: 12px;
+    font-size: 0.9rem;
+    padding: 15px 25px;
+    border-radius: 8px;
     letter-spacing: 2px;
+}
+
+@media(min-width:992px) {
+    .btn-w-big {
+        font-size: 1rem;
+        padding: 23px 54px;
+        border-radius: 12px;
+    }
 }
 
 .btn-color-p {
