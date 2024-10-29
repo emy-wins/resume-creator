@@ -1,18 +1,25 @@
 <div class="s-create-resume">
 	<div class="container pt-5 pb-5">
-		<h1 class="text-center mb-5">MY RESUME</h1>
 		<div class="row">
 			<div class="col-12">
-				<div class="d-grid-2">
+				<div class="d-grid-10">
 					<nav class="menu-create">
 						<div>
-							<a href="#"></a>
+							<a href="javascript:void(0);" class="flx-center btn-downld">
+								<img src="../assets/images/icons/download.svg" alt=""/>
+							</a>
+							<a href="javascript:void(0);" class="flx-center btn-enrgstr">
+								<img src="../assets/images/icons/heart.svg" alt=""/>
+							</a>
 						</div>
 						<div>
 							<a href="#">text</a>
 						</div>
 					</nav>
 					<div class="form-resume">
+						<button class="btn-preview flx-center">
+							<img src="../assets/images/icons/preview.svg" alt=""/>
+						</button>
 						<form
 							action="#" class="form">
 							<!-- Progress bar -->
@@ -30,83 +37,137 @@
 							<!-- Steps -->
 							<div class="form-step form-step-active">
 								<h2 class="text-color-p  mb-5">Informations</h2>
-								<div class="flx-between">
-									<div class="w-49 upload-image">
+								<div class="d-grid-3">
+									<div class="upload-image">
 										<input type="file"/>
 										<div class="image-file">
 											<img src="../assets/images/icons/camera.svg"/>
 										</div>
 									</div>
-									<div class="w-49">
+									<div>
 										<input type="text" placeholder="First and last name"/>
+										<input type="email" placeholder="Email*"/>
+									</div>
+									<div>
 										<input type="text" placeholder="Job title"/>
+										<input type="tel" placeholder="Phone *"/>
 									</div>
 								</div>
-								<div class="flx-between">
-									<div class="w-49">
-										<input type="email" placeholder="Email*"/>
-										<input type="tel" placeholder="Phone *"/>
-										<input type="text" placeholder="Linkedin"/>
-										<input type="text" placeholder="Adresse"/>
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Linkedin"/></div>
+									<div><input type="text" placeholder="URL website"/></div>
+									<div>
+										<textarea placeholder="Adresse"></textarea>
 									</div>
-									<div class="w-49">
-										<input type="text" placeholder="URL website"/>
+									<div>
 										<textarea placeholder="Description"></textarea>
 									</div>
+									<a href="javascript:void(0);" data-sc="informations" class="add-sc">+</a>
 								</div>
-
-								<div class="btns-group mt-5">
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3">Experiences</h2>
-								<div class="btns-group mt-5">
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Job title *"/></div>
+									<div><input type="text" placeholder="Company name *"/></div>
+									<div><input type="text" placeholder="Date start *"/></div>
+									<div><input type="text" placeholder="Date end"/></div>
+									<div><input type="text" placeholder="Company Website *"/></div>
+									<div>
+										<textarea placeholder="Description"></textarea>
+									</div>
+									<a href="javascript:void(0);" data-sc="experience" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3">Education</h2>
-								<div class="btns-group mt-5">
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Title *"/></div>
+									<div><input type="text" placeholder="School name *"/></div>
+									<div><input type="text" placeholder="Date start *"/></div>
+									<div><input type="text" placeholder="Date end"/></div>
+									<div>
+										<textarea placeholder="Description"></textarea>
+									</div>
+									<a href="javascript:void(0);" data-sc="education" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3">Certificates</h2>
-
-								<div class="btns-group mt-5">
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Certificate title *"/></div>
+									<div><input type="text" placeholder="Date"/></div>
+									<a href="javascript:void(0);" data-sc="certificates" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3">Skills</h2>
-								<div class="btns-group mt-5">
+								<div><input type="text" placeholder="Title *"/></div>
+								<div class="d-grid-2">
+									<a href="javascript:void(0);" data-sc="skills" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3">language</h2>
-								<div class="btns-group mt-5">
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Title *"/></div>
+									<div>
+										<select>
+											<option value="Level">Level</option>
+											<option value="Mastery">Mastery</option>
+											<option value="Advanced">Advanced</option>
+											<option value="Upper Intermediate">Upper Intermediate</option>
+											<option value="Intermediate">Intermediate</option>
+											<option value="Elementary">Elementary</option>
+											<option value="Beginner">Beginner</option>
+										</select>
+									</div>
+									<a href="javascript:void(0);" data-sc="language" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3" class="">Awards</h2>
-								<div class="btns-group mt-5">
+								<div><input type="text" placeholder="Title *"/></div>
+								<div class="d-grid-2">
+									<a href="javascript:void(0);" data-sc="award" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
 									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
 								</div>
 							</div>
 							<div class="form-step">
 								<h2 class="text-color-p  mb-3">Interests</h2>
-								<div class="btns-group mt-5">
+								<div><input type="text" placeholder="Title *"/></div>
+								<div class="d-grid-2">
+									<a href="javascript:void(0);" data-sc="award" class="add-sc">+</a>
+								</div>
+								<div class="btns-group mt-3">
 									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<input type="submit" value="Submit" class="btn-w bg-color-p"/>
+									<button class="btn-w bg-color-p">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -114,5 +175,11 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+<div class="wrap-priview flx-center" id="popup1">
+	<button class="btn-close"></button>
+	<div class="popup-priview">
+		<img src="../assets/images/cv.jpg" data-image="../assets/images/cv.jpg" alt=""/>
 	</div>
 </div>

@@ -142,9 +142,9 @@ h2 {
     justify-content: center;
 }
 
-
+textarea,
+select,
 input {
-    background-color: $wt;
     padding: 0.7rem 0.9rem;
     outline: 0;
     border: 0;
@@ -152,12 +152,10 @@ input {
     border-radius: 4px;
     font-family: $font;
     font-weight: normal;
+    border: 1px solid $perpel;
 }
 
-input:focus::placeholder {
-    color: $black;
-}
-
+textarea:focus::placeholder,
 input:focus::placeholder {
     color: transparent;
 }

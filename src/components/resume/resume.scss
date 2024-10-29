@@ -16,30 +16,6 @@
         opacity: 0;
         pointer-events: none;
 
-        .btn-preview {
-            border: 0;
-            outline: 0;
-            background-color: $color-p;
-            width: 45px;
-            height: 35px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: 3;
-            transform: scale(0.8);
-            cursor: pointer;
-
-            img {
-                width: 25px;
-                height: 25px;
-                object-fit: contain;
-            }
-        }
-
-        .btn-preview:hover {
-            background-color: $perpel !important;
-        }
-
         .card-buttons {
             display: flex;
             align-items: center;
@@ -69,6 +45,29 @@
             object-fit: cover;
         }
     }
+}
+
+.btn-preview {
+    border: 0;
+    outline: 0;
+    background-color: $color-p;
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    cursor: pointer;
+
+    img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+}
+
+.btn-preview:hover {
+    background-color: $perpel !important;
 }
 
 //hover

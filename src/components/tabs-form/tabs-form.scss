@@ -1,4 +1,4 @@
-.d-grid-2 {
+.d-grid-10 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
@@ -6,14 +6,49 @@
     grid-row-gap: 0px;
 }
 
+.d-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.d-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
 .menu-create {
     width: 100%;
+    max-width: 80px;
     background-color: $white;
     border-radius: 9px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    a {
+        padding: 15px 10px;
+
+        img {
+            width: 30px;
+            object-fit: contain;
+        }
+    }
+
+    .btn-downld {
+        background-color: $color-p;
+        border-radius: 9px 9px 0 0;
+    }
+    .btn-enrgstr{
+        background-color: $perpel;
+    }
 }
 
 .form-resume {
@@ -21,6 +56,22 @@
     padding: 20px;
     background-color: $white;
     grid-column: 2/11;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    .add-sc {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        font-family: $font;
+        padding: 5px 20px;
+        background-color: $perpel-42;
+        color: $color-p;
+        grid-column: 1/3;
+        border-radius: 9px;
+    }
 
     /* Progressbar */
     .progressbar {
@@ -28,7 +79,7 @@
         display: flex;
         justify-content: space-between;
         counter-reset: step;
-        margin: 2rem 0 4rem;
+        margin: 1.5rem 0;
         z-index: 0;
     }
 
@@ -83,16 +134,19 @@
         text-transform: capitalize;
     }
 
+    select,
+    textarea,
     input {
         display: block;
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 }
 
 .upload-image {
     position: relative;
     z-index: 0;
+    margin-bottom: 20px;
 
     &>input {
         position: absolute;
@@ -109,10 +163,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $wt;
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    border: 1px solid $perpel;
+    margin: auto;
 
     img {
         width: 60px;
@@ -145,7 +200,7 @@
 
 @media(min-width:992px) {
     .form-resume {
-        padding: 40px;
+        padding: 20px 40px;
 
         /* Progressbar */
         .progressbar::before,
