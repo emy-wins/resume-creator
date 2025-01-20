@@ -18,6 +18,7 @@ $(document).ready(function () {
 
   var originalImagePath = $(".popup-priview").find('img').data('image');
   $(".popup-priview").zoom({ url: originalImagePath });
+
  
   $(".btn-preview").click(function () {
     $('.wrap-priview').addClass('pop-active');

@@ -46,9 +46,15 @@
         background-color: $color-p;
         border-radius: 9px 9px 0 0;
     }
-    .btn-enrgstr{
+
+    .btn-enrgstr {
         background-color: $perpel;
     }
+}
+
+.s-create-resume {
+    position: relative;
+    z-index: 0;
 }
 
 .form-resume {
