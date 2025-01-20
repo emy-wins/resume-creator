@@ -1,17 +1,34 @@
 
 $(".slider-resumes").slick({
-  variableWidth: true,
-  centerMode: true,
-  arrows: true,
-  dots: false,
-  speed: 300,
-  centerPadding: '100px',
-  infinite: true,
-  autoplaySpeed: 3000,
+  speed: 10000,
   autoplay: true,
-  prevArrow: '.prev',
-  nextArrow: '.next',
+  autoplaySpeed: 0,
+  centerMode: true,
+  cssEase: 'linear',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: true,
+  initialSlide: 1,
+  arrows: false,
+  buttons: false
 });
+$(".slider2-resumes").slick({
+  speed: 10000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  centerMode: true,
+  cssEase: 'linear',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: true,
+  initialSlide: 1,
+  arrows: false,
+  buttons: false,
+  rtl: true
+});
+
 $('.popup-priview').click();
 
 $(document).ready(function () {
