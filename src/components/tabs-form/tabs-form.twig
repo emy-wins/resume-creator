@@ -1,176 +1,274 @@
 <div class="s-create-resume">
 	<div class="container pt-5 pb-5">
 		<div class="row">
-			<div class="col-12">
-				<div class="d-grid-10">
-					<nav class="menu-create">
-						<div>
-							<a href="javascript:void(0);" class="flx-center btn-downld">
-								<img src="../assets/images/icons/download.svg" alt=""/>
-							</a>
-							<a href="javascript:void(0);" class="flx-center btn-enrgstr">
-								<img src="../assets/images/icons/heart.svg" alt=""/>
-							</a>
+			<div class="col-2">
+				<nav class="menu-create">
+					<a href="javascript:void(0);" class="active-link">
+						<img src="../assets/images/icons/download.svg" alt=""/>
+						Télécharger
+					</a>
+					<a href="javascript:void(0);">
+						<img src="../assets/images/icons/heart.svg" alt=""/>
+						Enregistrement
+					</a>
+					<a href="javascript:void(0);">
+						<img src="../assets/images/icons/logout.svg" alt=""/>
+						Deconnexion</a>
+				</nav>
+			</div>
+			<div class="col-10">
+				<div class="form-resume">
+					<button class="btn-preview flx-center">
+						<img src="../assets/images/icons/preview.svg" alt=""/>
+					</button>
+					<form
+						action="#" class="form">
+						<!-- Progress bar -->
+						<div class="progressbar">
+							<div class="progress" id="progress"></div>
+							<div class="progress-step progress-step-active" data-title="Informations"></div>
+							<div class="progress-step" data-title="Experiences"></div>
+							<div class="progress-step" data-title="Education"></div>
+							<div class="progress-step" data-title="Certificates"></div>
+							<div class="progress-step" data-title="Skills"></div>
+							<div class="progress-step" data-title="language"></div>
+							<div class="progress-step" data-title="Awards"></div>
+							<div class="progress-step" data-title="Interests"></div>
 						</div>
-						<div>
-							<a href="#">text</a>
-						</div>
-					</nav>
-					<div class="form-resume">
-						<button class="btn-preview flx-center">
-							<img src="../assets/images/icons/preview.svg" alt=""/>
-						</button>
-						<form
-							action="#" class="form">
-							<!-- Progress bar -->
-							<div class="progressbar">
-								<div class="progress" id="progress"></div>
-								<div class="progress-step progress-step-active" data-title="Informations"></div>
-								<div class="progress-step" data-title="Experiences"></div>
-								<div class="progress-step" data-title="Education"></div>
-								<div class="progress-step" data-title="Certificates"></div>
-								<div class="progress-step" data-title="Skills"></div>
-								<div class="progress-step" data-title="language"></div>
-								<div class="progress-step" data-title="Awards"></div>
-								<div class="progress-step" data-title="Interests"></div>
+						<!-- Steps -->
+						<div class="form-step form-step-active">
+							<h2 class="text-color-p  mb-5">Informations</h2>
+							<div class="d-grid-3">
+								<div class="upload-image">
+									<input type="file"/>
+									<div class="image-file">
+										<img src="../assets/images/icons/camera.svg"/>
+									</div>
+								</div>
+								<div>
+									<input type="text" placeholder="First and last name"/>
+									<input type="email" placeholder="Email*"/>
+								</div>
+								<div>
+									<input type="text" placeholder="Job title"/>
+									<input type="tel" placeholder="Phone *"/>
+								</div>
 							</div>
-							<!-- Steps -->
-							<div class="form-step form-step-active">
-								<h2 class="text-color-p  mb-5">Informations</h2>
-								<div class="d-grid-3">
-									<div class="upload-image">
-										<input type="file"/>
-										<div class="image-file">
-											<img src="../assets/images/icons/camera.svg"/>
+							<div class="d-grid-2">
+								<div><input type="text" placeholder="Linkedin"/></div>
+								<div><input type="text" placeholder="URL website"/></div>
+								<div>
+									<textarea placeholder="Adresse"></textarea>
+								</div>
+								<div>
+									<textarea placeholder="Description"></textarea>
+								</div>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3">Experiences</h2>
+							<div class="d-grid-2">
+								<div><input type="text" placeholder="Job title *"/></div>
+								<div><input type="text" placeholder="Company name *"/></div>
+								<div><input type="date" placeholder="Date start *"/></div>
+								<div><input type="date" placeholder="Date end"/></div>
+								<div><input type="text" placeholder="Company Website *"/></div>
+								<div>
+									<textarea placeholder="Description"></textarea>
+								</div>
+								<a href="javascript:void(0);" data-sc="experience" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3">Education</h2>
+							<div class="d-grid-2">
+								<div><input type="text" placeholder="Title *"/></div>
+								<div><input type="text" placeholder="School name *"/></div>
+								<div><input type="date" placeholder="Date start *"/></div>
+								<div><input type="date" placeholder="Date end"/></div>
+								<div>
+									<textarea placeholder="Description"></textarea>
+								</div>
+								<a href="javascript:void(0);" data-sc="education" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3">Certificates</h2>
+							<div class="d-grid-2">
+								<div><input type="text" placeholder="Certificate title *"/></div>
+								<div><input type="date" placeholder="Date"/></div>
+								<a href="javascript:void(0);" data-sc="certificates" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3">Skills</h2>
+							<div><input type="text" placeholder="Title *"/></div>
+							<div class="d-grid-2">
+								<a href="javascript:void(0);" data-sc="skills" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3">language</h2>
+							<div class="d-grid-2">
+								<div><input type="text" placeholder="Title *"/></div>
+								<div>
+									<select>
+										<option value="Level">Level</option>
+										<option value="Mastery">Mastery</option>
+										<option value="Advanced">Advanced</option>
+										<option value="Upper Intermediate">Upper Intermediate</option>
+										<option value="Intermediate">Intermediate</option>
+										<option value="Elementary">Elementary</option>
+										<option value="Beginner">Beginner</option>
+									</select>
+								</div>
+								<a href="javascript:void(0);" data-sc="language" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3" class="">Awards</h2>
+							<div><input type="text" placeholder="Title *"/></div>
+							<div class="d-grid-2">
+								<a href="javascript:void(0);" data-sc="award" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
+							</div>
+						</div>
+						<div class="form-step">
+							<h2 class="text-color-p  mb-3">Interests</h2>
+							<div><input type="text" placeholder="Title *"/></div>
+							<div class="d-grid-2">
+								<a href="javascript:void(0);" data-sc="interest" class="add-sc">+</a>
+							</div>
+							<div class="btns-group mt-3">
+								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
+								<button class="btn-w bg-color-p">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="form-resume p-5 bg-perple-2">
+					<form action="" method="">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 col-lg-4 col-xl-3">
+									<div class="card-resume mb-3">
+										<div class="card-resume__bg">
+											<button class="btn-preview">
+												<img src="../assets/images/icons/preview.svg" alt="">
+											</button>
+											<div class="card-buttons">
+												<a href="create-resume.html" class="btn-w bg-perple">USE THIS</a>
+												<button class="btn-save">
+													<img src="../assets/images/icons/delete.svg" alt="">
+												</button>
+											</div>
+										</div>
+										<div class="card-resume__img">
+											<img src="../assets/images/cv.jpg" alt="">
 										</div>
 									</div>
-									<div>
-										<input type="text" placeholder="First and last name"/>
-										<input type="email" placeholder="Email*"/>
+								</div>
+								<div class="col-md-6 col-lg-4 col-xl-3">
+									<div class="card-resume mb-3">
+										<div class="card-resume__bg">
+											<button class="btn-preview">
+												<img src="../assets/images/icons/preview.svg" alt="">
+											</button>
+											<div class="card-buttons">
+												<a href="create-resume.html" class="btn-w bg-perple">USE THIS</a>
+												<button class="btn-save">
+													<img src="../assets/images/icons/delete.svg" alt="">
+												</button>
+											</div>
+										</div>
+										<div class="card-resume__img">
+											<img src="../assets/images/cv.jpg" alt="">
+										</div>
 									</div>
-									<div>
-										<input type="text" placeholder="Job title"/>
-										<input type="tel" placeholder="Phone *"/>
+								</div>
+								<div class="col-md-6 col-lg-4 col-xl-3">
+									<div class="card-resume mb-3">
+										<div class="card-resume__bg">
+											<button class="btn-preview">
+												<img src="../assets/images/icons/preview.svg" alt="">
+											</button>
+											<div class="card-buttons">
+												<a href="create-resume.html" class="btn-w bg-perple">USE THIS</a>
+												<button class="btn-save">
+													<img src="../assets/images/icons/delete.svg" alt="">
+												</button>
+											</div>
+										</div>
+										<div class="card-resume__img">
+											<img src="../assets/images/cv.jpg" alt="">
+										</div>
 									</div>
 								</div>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Linkedin"/></div>
-									<div><input type="text" placeholder="URL website"/></div>
-									<div>
-										<textarea placeholder="Adresse"></textarea>
+								<div class="col-md-6 col-lg-4 col-xl-3">
+									<div class="card-resume mb-3">
+										<div class="card-resume__bg">
+											<button class="btn-preview">
+												<img src="../assets/images/icons/preview.svg" alt="">
+											</button>
+											<div class="card-buttons">
+												<a href="create-resume.html" class="btn-w bg-perple">USE THIS</a>
+												<button class="btn-save">
+													<img src="../assets/images/icons/delete.svg" alt="">
+												</button>
+											</div>
+										</div>
+										<div class="card-resume__img">
+											<img src="../assets/images/cv.jpg" alt="">
+										</div>
 									</div>
-									<div>
-										<textarea placeholder="Description"></textarea>
+								</div>
+								<div class="col-md-6 col-lg-4 col-xl-3">
+									<div class="card-resume mb-3">
+										<div class="card-resume__bg">
+											<button class="btn-preview">
+												<img src="../assets/images/icons/preview.svg" alt="">
+											</button>
+											<div class="card-buttons">
+												<a href="create-resume.html" class="btn-w bg-perple">USE THIS</a>
+												<button class="btn-save">
+													<img src="../assets/images/icons/delete.svg" alt="">
+												</button>
+											</div>
+										</div>
+										<div class="card-resume__img">
+											<img src="../assets/images/cv.jpg" alt="">
+										</div>
 									</div>
 								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
 							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3">Experiences</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Job title *"/></div>
-									<div><input type="text" placeholder="Company name *"/></div>
-									<div><input type="date" placeholder="Date start *"/></div>
-									<div><input type="date" placeholder="Date end"/></div>
-									<div><input type="text" placeholder="Company Website *"/></div>
-									<div>
-										<textarea placeholder="Description"></textarea>
-									</div>
-									<a href="javascript:void(0);" data-sc="experience" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
-							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3">Education</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Title *"/></div>
-									<div><input type="text" placeholder="School name *"/></div>
-									<div><input type="date" placeholder="Date start *"/></div>
-									<div><input type="date" placeholder="Date end"/></div>
-									<div>
-										<textarea placeholder="Description"></textarea>
-									</div>
-									<a href="javascript:void(0);" data-sc="education" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
-							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3">Certificates</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Certificate title *"/></div>
-									<div><input type="date" placeholder="Date"/></div>
-									<a href="javascript:void(0);" data-sc="certificates" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
-							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3">Skills</h2>
-								<div><input type="text" placeholder="Title *"/></div>
-								<div class="d-grid-2">
-									<a href="javascript:void(0);" data-sc="skills" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
-							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3">language</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Title *"/></div>
-									<div>
-										<select>
-											<option value="Level">Level</option>
-											<option value="Mastery">Mastery</option>
-											<option value="Advanced">Advanced</option>
-											<option value="Upper Intermediate">Upper Intermediate</option>
-											<option value="Intermediate">Intermediate</option>
-											<option value="Elementary">Elementary</option>
-											<option value="Beginner">Beginner</option>
-										</select>
-									</div>
-									<a href="javascript:void(0);" data-sc="language" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
-							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3" class="">Awards</h2>
-								<div><input type="text" placeholder="Title *"/></div>
-								<div class="d-grid-2">
-									<a href="javascript:void(0);" data-sc="award" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-								</div>
-							</div>
-							<div class="form-step">
-								<h2 class="text-color-p  mb-3">Interests</h2>
-								<div><input type="text" placeholder="Title *"/></div>
-								<div class="d-grid-2">
-									<a href="javascript:void(0);" data-sc="interest" class="add-sc">+</a>
-								</div>
-								<div class="btns-group mt-3">
-									<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-									<button class="btn-w bg-color-p">Submit</button>
-								</div>
-							</div>
-						</form>
-					</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
