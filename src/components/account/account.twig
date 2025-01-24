@@ -1,0 +1,38 @@
+<div class="container pb-5 pt-5">
+	<div class="row justify-content-center">
+		<div class="col-xl-6">
+			<div class="sc-account">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-tab-pane" type="button" role="tab" aria-controls="register-tab-pane" aria-selected="true">REGISTER</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">LOGIN</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab" tabindex="0">
+						<form method="POST" action="">
+							<div class="d-grid-2">
+								<div class="mb-3"><input type="text" placeholder="Name *"></div>
+								<div class="mb-3"><input type="email" placeholder="Email *"></div>
+								<div class="mb-3"><input type="password" placeholder="Password *"></div>
+								<div class="mb-3"><input type="password" placeholder="Confirmation password *"></div>
+								<div class="mb-3"><input type="submit" class="btn-w bg-perple" value="Register"></div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane fade" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
+						<form method="POST" action="">
+							<div class="mb-3"><input type="email" placeholder="Email *"></div>
+							<div class="mb-3"><input type="password" placeholder="Password *"></div>
+							<div class="d-grid-2">
+								<div class="mb-3"><input type="submit" class="btn-w bg-perple" value="Login"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

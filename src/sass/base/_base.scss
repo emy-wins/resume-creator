@@ -153,6 +153,7 @@ input {
     font-family: $font;
     font-weight: normal;
     border: 1px solid $perpel;
+    width: 100%;
 }
 
 textarea:focus::placeholder,
