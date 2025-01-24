@@ -34,7 +34,7 @@
                 background-color: transparent;
 
                 img {
-                    width: 30px;
+                    width: 40px;
                     object-fit: contain;
                 }
             }
@@ -59,15 +59,14 @@
         z-index: 1;
         aspect-ratio: 1;
         clip-path: polygon(0 0, 100% 100%, 100% 0);
-        background-color: red;
-        width: 126px;
+        width: 110px;
 
         span {
             color: $white;
             font-size: 0.8rem;
             font-family: $font;
             font-weight: normal;
-            transform: rotate(45deg) translate(-50%, -30%);
+            transform: rotate(45deg) translate(-42%, 30%);
             display: block;
             text-align: center;
             width: 100px;
@@ -81,25 +80,19 @@
 .btn-preview {
     border: 0;
     outline: 0;
-    background-color: $color-p;
-    width: 45px;
-    height: 35px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 37%;
+    top: 22%;
     z-index: 3;
     cursor: pointer;
-
+    transform: translate(-37%, 0%);
+    z-index: 3;
     img {
-        width: 25px;
-        height: 25px;
+        width: 40px;
         object-fit: contain;
     }
 }
 
-.btn-preview:hover {
-    background-color: $perpel !important;
-}
 
 //hover
 .card-resume:hover {
@@ -107,8 +100,7 @@
         opacity: 1;
         pointer-events: fill;
 
-        .card-buttons,
-        .btn-preview {
+        .card-buttons {
             transform: scale(1);
         }
     }
