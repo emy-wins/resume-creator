@@ -89,6 +89,10 @@ h2 {
     border-radius: 8px;
     letter-spacing: 2px;
 }
+.btn-blue{
+    color: $white;
+    background-color: $primary-color;
+}
 
 @media(min-width:992px) {
     .btn-w-big {

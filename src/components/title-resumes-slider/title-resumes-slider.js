@@ -43,5 +43,23 @@ $(document).ready(function () {
   $(".btn-close").click(function () {
     $('.wrap-priview').removeClass('pop-active');
   });
-  
+
+
+  $(".dwn").click(function () {
+
+    window.jsPDF = window.jspdf.jsPDF;
+    var docpdf = new jsPDF();
+    var elementHTML = document.querySelector("#cv");
+    var invoiceNo = "MyResume";
+    docpdf.html(elementHTML, {
+      callback: function () {
+        docpdf.save(invoiceNo + '.pdf');
+      },
+      x: 15,
+      y: 15,
+      width: 170,
+      windowWidth: 650
+    });
+  });
+
 });
