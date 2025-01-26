@@ -58,7 +58,7 @@ $(document).ready(function () {
       x: 15,
       y: 15,
       width: 170,
-      windowWidth: 650
+      windowWidth: 850
     });
   });
 
