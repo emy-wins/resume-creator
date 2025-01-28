@@ -226,11 +226,34 @@
 }
 
 #cv {
+    h1 {
+        font-size: 2rem;
+        line-height: 1 !important;
+        font-weight: bold !important;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        line-height: 1 !important;
+        font-weight: normal !important;
+        white-space: nowrap;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
     .sm {
-        img{
+        max-width: 250px;
+        font-size: 0.8rem;
+        padding: 0 8px;
+
+        img {
             width: 14px;
             object-fit: contain;
-            object-position: left;
+            object-position: center;
             margin-right: 5px;
         }
     }
@@ -239,8 +262,8 @@
         width: 100%;
 
         h2 {
-            border-bottom: 3px solid $black;
-            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            border-bottom: 4px solid $black;
         }
     }
 }
