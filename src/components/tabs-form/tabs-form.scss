@@ -226,6 +226,15 @@
 }
 
 #cv {
+    .sm {
+        img{
+            width: 14px;
+            object-fit: contain;
+            object-position: left;
+            margin-right: 5px;
+        }
+    }
+
     .bd {
         width: 100%;
 
