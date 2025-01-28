@@ -73,25 +73,32 @@ h2 {
 
 .btn-w {
     font-size: .8rem;
-    padding: 10px 25px;
+    padding: 8px 20px;
     border-radius: 5px;
     letter-spacing: 1px;
 }
-.btn-medium{
+
+.btn-medium {
     font-size: .9rem;
     padding: 15px 25px;
     border-radius: 5px;
     letter-spacing: 1px;
 }
+
 .btn-w-big {
     font-size: 0.9rem;
     padding: 15px 25px;
     border-radius: 8px;
     letter-spacing: 2px;
 }
-.btn-blue{
+
+.btn-blue {
     color: $white;
     background-color: $primary-color;
+}
+.btn-white{
+    background-color: $white;
+    color: $color-p;
 }
 
 @media(min-width:992px) {
