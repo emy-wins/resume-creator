@@ -224,3 +224,13 @@
 .w-49 {
     width: 49%;
 }
+
+#cv {
+    .bd {
+        width: 100%;
+
+        h2 {
+            border-bottom: 3px solid $black;
+        }
+    }
+}
