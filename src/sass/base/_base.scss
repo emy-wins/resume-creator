@@ -5,11 +5,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     list-style: none;
     text-decoration: none;
     transition: 0.3s linear;
-    font-family: $font !important;
+    font-family: 'helvetica', sans-serif !important;
 }
 
 body {
@@ -47,7 +46,7 @@ button {
     border: 0 !important;
     outline: 0;
     font-weight: 500;
-    font-family: $font;
+    font-family: 'helvetica', sans-serif !important;
     text-transform: uppercase !important;
 }
 
@@ -166,7 +165,7 @@ input {
     border: 0;
     font-size: 0.8rem;
     border-radius: 4px;
-    font-family: $font;
+    font-family: 'helvetica', sans-serif !important;
     font-weight: normal;
     border: 1px solid $perpel;
     width: 100%;

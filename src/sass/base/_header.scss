@@ -120,6 +120,7 @@ header {
                                 text-transform: capitalize;
 
                                 img {
+                                    border: 1px solid $black;
                                     display: none;
                                     width: 90px;
                                     object-fit: contain;
@@ -145,13 +146,15 @@ header {
         padding-top: 15px;
         height: auto;
     }
-    .link-profil{
+
+    .link-profil {
         display: flex;
         align-items: center;
         color: $color-p;
         font-weight: normal;
         font-size: 1rem;
-        img{
+
+        img {
             width: 50px;
             height: 50px;
             object-fit: cover;
@@ -205,7 +208,7 @@ header {
                     li.dropdown {
 
                         .sous-menu {
-                            background-color: $perpel-2;
+                            background-color: $white;
                             padding: 40px;
                             position: absolute;
                             right: 0;

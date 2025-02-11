@@ -45,14 +45,15 @@ $(document).ready(function () {
   });
 
   $(".dwn").click(function () {
-
     window.jsPDF = window.jspdf.jsPDF;
     var docpdf = new jsPDF();
     var elementHTML = document.querySelector("#cv");
     var invoiceNo = "MyResume";
     const pageWidth = docpdf.internal.pageSize.getWidth();
+    docpdf.setFont("helvetica", "bold");
     docpdf.html(elementHTML, {
       callback: function () {
+        docpdf.setFont("helvetica", "bold");
         docpdf.save(invoiceNo + '.pdf');
       },
       x: 0,
@@ -60,6 +61,7 @@ $(document).ready(function () {
       width: pageWidth,
       windowWidth: elementHTML.offsetWidth,
     });
+
   });
 
 });
