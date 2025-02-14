@@ -50,6 +50,13 @@ button {
     text-transform: uppercase !important;
 }
 
+input[type="color"] {
+    width: 100%!important;
+    height: 30px;
+    border: 0px;
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -95,7 +102,8 @@ h2 {
     color: $white;
     background-color: $primary-color;
 }
-.btn-white{
+
+.btn-white {
     background-color: $white;
     color: $color-p;
 }

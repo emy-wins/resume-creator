@@ -48,3 +48,34 @@ function updateProgressbar() {
 
 
 
+$(document).ready(function () {
+  $("#colorPicker1").on("input change", function () {
+    let selectedColor = $(this).val();
+    $("#cv").css('color', selectedColor);
+  });
+  $("#colorPicker2").on("input change", function () {
+    let selectedColor = $(this).val();
+    $(".cv-bg").css('background-color', selectedColor);
+  });
+
+  $(".dwn").on("click", function () {
+    window.jsPDF = window.jspdf.jsPDF;
+    var docpdf = new jsPDF();
+    var elementHTML = document.querySelector("#cv");
+    var invoiceNo = "MyResume";
+    const pageWidth = docpdf.internal.pageSize.getWidth();
+    docpdf.setFont("helvetica", "bold");
+    docpdf.html(elementHTML, {
+      callback: function () {
+        docpdf.setFont("helvetica", "bold");
+        docpdf.save(invoiceNo + '.pdf');
+      },
+      x: 0,
+      y: 0,
+      width: pageWidth,
+      windowWidth: elementHTML.offsetWidth,
+    });
+
+  });
+
+})
