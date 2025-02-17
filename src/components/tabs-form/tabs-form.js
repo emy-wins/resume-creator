@@ -82,18 +82,23 @@ $(document).ready(function () {
   $(".dwn").on("click", function () {
 
     window.jsPDF = window.jspdf.jsPDF;
-    var pdf = new jsPDF();
+    var pdf = new jsPDF({
+      orientation: "portrait",
+      unit: "pt",
+      format: "a4",
+    });
+
     const svgElement = document.getElementById("vectorSVG");
     const pageWidth = pdf.internal.pageSize.getWidth();
-    svg2pdf(svgElement, pdf, {
-      x: 0,
-      y: 0,
-      width: pageWidth,
-      windowWidth: svgElement.offsetWidth,
-    });
+    svg2pdf(svgElement, pdf, { x: 10, y: 10, width: pageWidth});
+
+    pdf.setFont(undefined, 'normal')
     pdf.save("vector-svg.pdf");
   });
 
 
 })
+
+
+
 
