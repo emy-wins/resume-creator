@@ -34,9 +34,10 @@
         width: 100%;
 
         img {
-            width: 30px;
+            width: 20px;
+            height: 20px;
             object-fit: contain;
-            margin-right: 10px;
+            margin-right: 8px;
         }
     }
 
@@ -178,16 +179,15 @@
 }
 
 .pallete-color {
-    padding: 20px;
-    background-color: $white;
-    border-radius: 12px;
-    strong {
+    padding: 15px 0;
+    background-color: $perpel-2;
+
+    label {
+        display: block;
+        text-align: center;
         font-size: 1rem;
         display: block;
-        color: $perpel;
-    }
-    label{
-        display: none;
+        color: black;
     }
 }
 

@@ -58,24 +58,42 @@ $(document).ready(function () {
     $(".cv-bg").css('background-color', selectedColor);
   });
 
+  // $(".dwn").on("click", function () {
+  //   window.jsPDF = window.jspdf.jsPDF;
+  //   var docpdf = new jsPDF();
+  //   var elementHTML = document.querySelector("#cv");
+  //   var invoiceNo = "MyResume";
+  //   const pageWidth = docpdf.internal.pageSize.getWidth();
+  //   docpdf.setFont("helvetica", "bold");
+  //   docpdf.html(elementHTML, {
+  //     callback: function () {
+  //       docpdf.setFont("helvetica", "bold");
+  //       docpdf.save(invoiceNo + '.pdf');
+  //     },
+  //     x: 0,
+  //     y: 0,
+  //     width: pageWidth,
+  //     windowWidth: elementHTML.offsetWidth,
+  //   });
+
+  // });
+
+
   $(".dwn").on("click", function () {
+
     window.jsPDF = window.jspdf.jsPDF;
-    var docpdf = new jsPDF();
-    var elementHTML = document.querySelector("#cv");
-    var invoiceNo = "MyResume";
-    const pageWidth = docpdf.internal.pageSize.getWidth();
-    docpdf.setFont("helvetica", "bold");
-    docpdf.html(elementHTML, {
-      callback: function () {
-        docpdf.setFont("helvetica", "bold");
-        docpdf.save(invoiceNo + '.pdf');
-      },
+    var pdf = new jsPDF();
+    const svgElement = document.getElementById("vectorSVG");
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    svg2pdf(svgElement, pdf, {
       x: 0,
       y: 0,
       width: pageWidth,
-      windowWidth: elementHTML.offsetWidth,
+      windowWidth: svgElement.offsetWidth,
     });
-
+    pdf.save("vector-svg.pdf");
   });
 
+
 })
+
