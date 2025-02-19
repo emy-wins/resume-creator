@@ -239,51 +239,6 @@
     width: 49%;
 }
 
-#cv {
-    font-family: 'Poppins', sans-serif !important;
-
-    h1 {
-        font-size: 2rem;
-        line-height: 1 !important;
-        font-weight: bold !important;
-        white-space: nowrap;
-        text-transform: uppercase;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-        line-height: 1 !important;
-        font-weight: normal !important;
-        white-space: nowrap;
-    }
-
-    p {
-        line-height: 1.6;
-    }
-
-    .sm {
-        max-width: 250px;
-        font-size: 0.8rem;
-        padding: 0 8px;
-
-        img {
-            width: 14px;
-            object-fit: contain;
-            object-position: center;
-            margin-right: 5px;
-        }
-    }
-
-    .bd {
-        width: 100%;
-
-        h2 {
-            text-transform: uppercase;
-            border-bottom: 4px solid;
-        }
-    }
-}
-
 .cv-canvas {
     width: 100%;
 
