@@ -43,24 +43,13 @@
 				</nav>
 			</div>
 			<div class="col-12 col-xl-10">
+
 				<div class="form-resume">
-					<form
-						action="#" class="form">
-						<!-- Progress bar -->
-						<div class="progressbar">
-							<div class="progress" id="progress"></div>
-							<div class="progress-step progress-step-active" data-title="Informations"></div>
-							<div class="progress-step" data-title="Experiences"></div>
-							<div class="progress-step" data-title="Education"></div>
-							<div class="progress-step" data-title="Certificates"></div>
-							<div class="progress-step" data-title="Skills"></div>
-							<div class="progress-step" data-title="language"></div>
-							<div class="progress-step" data-title="Awards"></div>
-							<div class="progress-step" data-title="Interests"></div>
-						</div>
-						<!-- Steps -->
-						<div class="form-step form-step-active">
-							<h2 class="text-color-p  mb-5">Informations</h2>
+					<form method="post" action="">
+						<details>
+							<summary>
+								<h2 class="text-color-p">Informations</h2>
+							</summary>
 							<div class="d-grid-3">
 								<div class="upload-image">
 									<input type="file"/>
@@ -87,12 +76,11 @@
 									<textarea placeholder="Resume text"></textarea>
 								</div>
 							</div>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3">Experiences</h2>
+						</details>
+						<details>
+							<summary>
+								<h2 class="text-color-p">Experiences</h2>
+							</summary>
 							<div class="d-grid-2">
 								<div><input type="text" placeholder="Job title *"/></div>
 								<div><input type="text" placeholder="Company name *"/></div>
@@ -104,13 +92,11 @@
 								</div>
 							</div>
 							<a href="javascript:void(0);" data-sc="experience" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3">Education</h2>
+						</details>
+						<details>
+							<summary>
+								<h2 class="text-color-p">Education</h2>
+							</summary>
 							<div class="d-grid-2">
 								<div><input type="text" placeholder="Title *"/></div>
 								<div><input type="text" placeholder="School name *"/></div>
@@ -121,34 +107,27 @@
 								</div>
 							</div>
 							<a href="javascript:void(0);" data-sc="education" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3">Certificates</h2>
+						</details>
+						<details>
+							<summary>
+								<h2 class="text-color-p">Certificates</h2>
+							</summary>
 							<div class="d-grid-2">
 								<div><input type="text" placeholder="Certificate title *"/></div>
 								<div><input type="date" placeholder="Date"/></div>
 							</div>
-							<a href="javascript:void(0);" data-sc="certificates" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3">Skills</h2>
+						</details>
+						<details>
+							<summary>
+								<h2 class="text-color-p">Skills</h2>
+							</summary>
 							<div><input type="text" placeholder="Title *"/></div>
 							<a href="javascript:void(0);" data-sc="skills" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3">language</h2>
+						</details>
+						<details>
+							<summary>
+								<h2 class="text-color-p">language</h2>
+							</summary>
 							<div class="d-grid-2">
 								<div><input type="text" placeholder="Title *"/></div>
 								<div>
@@ -163,130 +142,20 @@
 									</select>
 								</div>
 							</div>
-							<a href="javascript:void(0);" data-sc="language" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3" class="">Awards</h2>
-							<div><input type="text" placeholder="Title *"/></div>
-							<a href="javascript:void(0);" data-sc="award" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<a href="javascript:void(0);" class="btn-next btn-w bg-perple">Next</a>
-							</div>
-						</div>
-						<div class="form-step">
-							<h2 class="text-color-p  mb-3">Interests</h2>
-							<div><input type="text" placeholder="Title *"/></div>
-							<a href="javascript:void(0);" data-sc="interest" class="add-sc flx-center">+</a>
-							<div class="btns-group mt-3">
-								<a href="javascript:void(0)" class="btn-prev  btn-w bg-perple">Previous</a>
-								<button class="btn-w bg-color-p">Submit</button>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="form-resume">
-					<form method="post" action="">
+						</details>
 						<details>
 							<summary>
-								<h2 class="text-color-p  mb-5">Informations</h2>
-								<div class="d-grid-3">
-									<div class="upload-image">
-										<input type="file"/>
-										<div class="image-file">
-											<img src="../assets/images/icons/camera.svg"/>
-										</div>
-									</div>
-									<div>
-										<input type="text" placeholder="First and last name"/>
-										<input type="email" placeholder="Email*"/>
-									</div>
-									<div>
-										<input type="text" placeholder="Job title"/>
-										<input type="tel" placeholder="Phone *"/>
-									</div>
-								</div>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Linkedin"/></div>
-									<div><input type="text" placeholder="URL website"/></div>
-									<div>
-										<textarea placeholder="Adresse"></textarea>
-									</div>
-									<div>
-										<textarea placeholder="Resume text"></textarea>
-									</div>
-								</div>
+								<h2 class="text-color-p">Awards</h2>
 							</summary>
+							<div><input type="text" placeholder="Title *"/></div>
+							<a href="javascript:void(0);" data-sc="award" class="add-sc flx-center">+</a>
+						</details>
+						<details>
 							<summary>
-								<h2 class="text-color-p  mb-3">Experiences</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Job title *"/></div>
-									<div><input type="text" placeholder="Company name *"/></div>
-									<div><input type="date" placeholder="Date start *"/></div>
-									<div><input type="date" placeholder="Date end"/></div>
-									<div><input type="text" placeholder="Company Website *"/></div>
-									<div>
-										<textarea placeholder="Description"></textarea>
-									</div>
-								</div>
-								<a href="javascript:void(0);" data-sc="experience" class="add-sc flx-center">+</a>
+								<h2 class="text-color-p">Interests</h2>
 							</summary>
-							<summary>
-								<h2 class="text-color-p  mb-3">Education</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Title *"/></div>
-									<div><input type="text" placeholder="School name *"/></div>
-									<div><input type="date" placeholder="Date start *"/></div>
-									<div><input type="date" placeholder="Date end"/></div>
-									<div>
-										<textarea placeholder="Description"></textarea>
-									</div>
-								</div>
-								<a href="javascript:void(0);" data-sc="education" class="add-sc flx-center">+</a>
-							</summary>
-							<summary>
-								<h2 class="text-color-p  mb-3">Certificates</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Certificate title *"/></div>
-									<div><input type="date" placeholder="Date"/></div>
-								</div>
-							</summary>
-							<summary>
-								<h2 class="text-color-p  mb-3">Skills</h2>
-								<div><input type="text" placeholder="Title *"/></div>
-								<a href="javascript:void(0);" data-sc="skills" class="add-sc flx-center">+</a>
-							</summary>
-							<summary>
-								<h2 class="text-color-p  mb-3">language</h2>
-								<div class="d-grid-2">
-									<div><input type="text" placeholder="Title *"/></div>
-									<div>
-										<select>
-											<option value="Level">Level</option>
-											<option value="Mastery">Mastery</option>
-											<option value="Advanced">Advanced</option>
-											<option value="Upper Intermediate">Upper Intermediate</option>
-											<option value="Intermediate">Intermediate</option>
-											<option value="Elementary">Elementary</option>
-											<option value="Beginner">Beginner</option>
-										</select>
-									</div>
-								</div>
-							</summary>
-							<summary>
-								<h2 class="text-color-p  mb-3" class="">Awards</h2>
-								<div><input type="text" placeholder="Title *"/></div>
-								<a href="javascript:void(0);" data-sc="award" class="add-sc flx-center">+</a>
-							</summary>
-							<summary>
-								<h2 class="text-color-p  mb-3">Interests</h2>
-								<div><input type="text" placeholder="Title *"/></div>
-								<a href="javascript:void(0);" data-sc="interest" class="add-sc flx-center">+</a>
-							</summary>
+							<div><input type="text" placeholder="Title *"/></div>
+							<a href="javascript:void(0);" data-sc="interest" class="add-sc flx-center">+</a>
 						</details>
 					</form>
 				</div>
@@ -396,7 +265,6 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="text-color"></div>
-
 								<div class="cv-canvas">
 									<svg xmlns="http://www.w3.org/2000/svg" id="vectorSVG" xmlns:xlink="http://www.w3.org/1999/xlink" width="2480" viewbox="0 0 2480 3508">
 										<defs>
@@ -444,8 +312,8 @@
 											</text>
 										</g>
 									</svg>
-
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -473,5 +341,3 @@
 		<img src="../assets/images/cv.jpg" data-image="../assets/images/cv.jpg" alt=""/>
 	</div>
 </div>
-
-<button onclick="convertSVGtoPDF()">Download as PDF</button>
