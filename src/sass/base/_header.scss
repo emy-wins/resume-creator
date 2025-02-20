@@ -4,6 +4,7 @@ header {
     box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
     position: relative;
     z-index: 1;
+
     .header-logo {
         width: 90px;
         margin-bottom: 15px;
@@ -79,7 +80,7 @@ header {
                     a {
                         text-transform: uppercase;
                         color: $color-p;
-                        font-weight: 500;
+                        font-weight: 700;
                         letter-spacing: 2px;
                     }
 

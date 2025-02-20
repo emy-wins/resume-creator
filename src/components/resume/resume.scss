@@ -32,15 +32,6 @@
             height: 100%;
             transform: scale(0.8);
 
-            .btn-save {
-                margin-left: 8px;
-                background-color: transparent;
-
-                img {
-                    width: 25px;
-                    object-fit: contain;
-                }
-            }
         }
     }
 
@@ -98,7 +89,8 @@
         width: 23px;
         object-fit: contain;
     }
-    &:hover{
+
+    &:hover {
         background-color: $perpel;
     }
 }
