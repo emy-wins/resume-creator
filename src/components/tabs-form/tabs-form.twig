@@ -42,8 +42,8 @@
 						Deconnexion</a>
 				</nav>
 			</div>
-			<div class="col-12 col-xl-10 d-none">
-				<div class="form-resume d-none">
+			<div class="col-12 col-xl-10">
+				<div class="form-resume">
 					<form
 						action="#" class="form">
 						<!-- Progress bar -->
@@ -189,6 +189,83 @@
 						</div>
 					</form>
 				</div>
+				<div class="form-resume">
+					<form method="post" action="">
+						<details>
+							<summary>
+								<h2 class="text-color-p  mb-5">Informations</h2>
+								<div class="d-grid-3">
+									<div class="upload-image">
+										<input type="file"/>
+										<div class="image-file">
+											<img src="../assets/images/icons/camera.svg"/>
+										</div>
+									</div>
+									<div>
+										<input type="text" placeholder="First and last name"/>
+										<input type="email" placeholder="Email*"/>
+									</div>
+									<div>
+										<input type="text" placeholder="Job title"/>
+										<input type="tel" placeholder="Phone *"/>
+									</div>
+								</div>
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Linkedin"/></div>
+									<div><input type="text" placeholder="URL website"/></div>
+									<div>
+										<textarea placeholder="Adresse"></textarea>
+									</div>
+									<div>
+										<textarea placeholder="Resume text"></textarea>
+									</div>
+								</div>
+							</summary>
+							<summary>
+								<h2 class="text-color-p  mb-3">Experiences</h2>
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Job title *"/></div>
+									<div><input type="text" placeholder="Company name *"/></div>
+									<div><input type="date" placeholder="Date start *"/></div>
+									<div><input type="date" placeholder="Date end"/></div>
+									<div><input type="text" placeholder="Company Website *"/></div>
+									<div>
+										<textarea placeholder="Description"></textarea>
+									</div>
+								</div>
+								<a href="javascript:void(0);" data-sc="experience" class="add-sc flx-center">+</a>
+							</summary>
+							<summary>
+								<h2 class="text-color-p  mb-3">Education</h2>
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Title *"/></div>
+									<div><input type="text" placeholder="School name *"/></div>
+									<div><input type="date" placeholder="Date start *"/></div>
+									<div><input type="date" placeholder="Date end"/></div>
+									<div>
+										<textarea placeholder="Description"></textarea>
+									</div>
+								</div>
+								<a href="javascript:void(0);" data-sc="education" class="add-sc flx-center">+</a>
+							</summary>
+							<summary>
+								<h2 class="text-color-p  mb-3">Certificates</h2>
+								<div class="d-grid-2">
+									<div><input type="text" placeholder="Certificate title *"/></div>
+									<div><input type="date" placeholder="Date"/></div>
+								</div>
+							</summary>
+							<summary>
+								<h2 class="text-color-p  mb-3">Skills</h2>
+								<div><input type="text" placeholder="Title *"/></div>
+								<a href="javascript:void(0);" data-sc="skills" class="add-sc flx-center">+</a>
+							</summary>
+							<summary>Click to see more details</summary>
+							<summary>Click to see more details</summary>
+							<summary>Click to see more details</summary>
+						</details>
+					</form>
+				</div>
 				<div class="form-resume p-5 bg-perple-2 d-none">
 					<h1 class="text-white">Save Resumes</h1>
 					<form action="" method="">
@@ -295,7 +372,7 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="text-color"></div>
-								<div id="cv">
+								<div id="cv" class="d-none">
 									<div class="hd d-flex justify-content-between align-items-center cv-bg" style="background-color:#eeeeee;padding:40px;">
 										<div>
 											<h1 contenteditable="true">Imane benkhadra</h1>
@@ -411,7 +488,7 @@
 											</text>
 										</g>
 									</svg>
-									
+
 								</div>
 							</div>
 						</div>
@@ -440,5 +517,3 @@
 		<img src="../assets/images/cv.jpg" data-image="../assets/images/cv.jpg" alt=""/>
 	</div>
 </div>
-
-<button onclick="convertSVGtoPDF()">Download as PDF</button>
