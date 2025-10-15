@@ -1,10 +1,11 @@
 .video-background {
     width: 100%;
+    height: 90vh;
     position: relative;
     z-index: 0;
     overflow: hidden;
     background-image: url("../images/video.JPG");
-    background-attachment: fixed; /* This makes the parallax effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,15 +13,44 @@
     .titles-banner {
         width: 100%;
         height: 100%;
-        background-color: $perpel-42;
+        background-color: rgb(0 0 0 / 26%);
 
         h2 {
+            text-align: center;
+            font-family: $font;
             font-weight: bold;
             color: $white;
-            font-size:calc(1.6rem + 2vw);
+            font-size: calc(1.6rem + 2vw);
 
             span {
                 color: $perpel;
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .video-background {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        background-image: url("../images/video.JPG");
+        background-attachment: fixed;
+        /* This makes the parallax effect */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .titles-banner {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0 0 0 / 26%);
+
+            h2 {
+                span {
+                    font-size: 3rem;
+                }
             }
         }
     }

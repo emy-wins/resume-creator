@@ -11,7 +11,8 @@
 	</head>
 	<body class="{% block body_class %}{% endblock %}">
 		{% include '../components/header.twig' %}
-		<main>
+		<main class="main-body">
+		<img src="../../assets/images/bg-blue.png" class="bg-maln" alt=""/>
 			{% block main %}{% endblock %}
 		</main>
 		{% include '../components/footer.twig' %}

@@ -1,6 +1,7 @@
 
 .wrap-account{
-    min-height: 80vh;
+    min-height: 100vh;
+    background-color: $color-p;
     .sc-account {
         border-radius: 12px;
         background-color: #fff;
@@ -14,7 +15,7 @@
     
                 .nav-link {
                     font-size: 1.1rem;
-                    font-family: 'helvetica', sans-serif !important;
+                    font-family: $font;
                     font-weight: 400;
                     color: $white;
                     background-color: $perpel-80;
@@ -32,7 +33,7 @@
             }
         }
         form{
-            padding: 60px 30px;
+            padding: 40px;
         }
     }
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			{% block page_title %}{% endblock %}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+		<link rel="icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.css"/>
+	</head>
+	<body class="{% block body_class %}{% endblock %} body-template">
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+		 <script type="module" src="assets/js/detects.js"></script>
+	 <script type="module" src="assets/js/another-file.js"></script>
+		 <script type="module" src="assets/js/html2canvas.js"></script>
+		 <script type="module" src="assets/js/jspdf.js"></script>
+		 <script src="assets/js/cropper.js"></script>
+		 <script src="assets/js/plugins.js"></script>
+		 <script type="module" type="module" src="assets/js/main.js"></script>
+		 <script type="module" src="assets/js/components.js"></script>
+	</body>
+</html>

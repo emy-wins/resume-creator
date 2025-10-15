@@ -1,15 +1,17 @@
 .s-banner {
-    padding: 30px 30px 60px;
-    background-color: $color-p;
+    padding: 15px 30px;
+    background-color: $white;
     border-radius: 8px;
-    margin: 50px 0;
     position: relative;
+    margin-bottom: 60px;
 
     h2 {
-        color: $white;
+        color: $color-semo;
 
         span {
-            color: $perpel;
+            color: $color-p;
+            font-weight: bold;
+            display: block;
         }
     }
 
@@ -27,7 +29,11 @@
 
 @media(min-width:992px) {
     .s-banner {
-        padding: 40px 60px 60px;
         border-radius: 12px;
+        h2 {
+            span {
+                font-size: 3rem;
+            }
+        }
     }
 }

@@ -29,14 +29,13 @@ $(".slider2-resumes").slick({
   rtl: true
 });
 
-$('.popup-priview').click();
 
 $(document).ready(function () {
 
-  var originalImagePath = $(".popup-priview").find('img').data('image');
-  $(".popup-priview").zoom({ url: originalImagePath });
-
   $(".btn-preview").click(function () {
+    $('.image-priview').attr("src", "");
+    var url_cv = $(this).data('preview');
+    $('.image-priview').attr("src", url_cv);
     $('.wrap-priview').addClass('pop-active');
   });
 

@@ -1,7 +1,13 @@
-.s-sliders{
-    background: radial-gradient(transparent, transparent, #8a8aff);
-    padding: 80px 0;
+.s-sliders {
+    //    background-color: $color-semo;
+    padding: 40px 0;
+
+    h2 {
+        font-size: calc(2rem + 1vw);
+        font-weight: 700;
+    }
 }
+
 .buttons-slider {
     margin: auto;
 
@@ -29,7 +35,7 @@
     top: -300px;
     bottom: 0;
     z-index: 5;
-    background-color: #0000008c;
+    background-color: #000000d9;
     padding: 20px;
     visibility: hidden;
     opacity: 0;

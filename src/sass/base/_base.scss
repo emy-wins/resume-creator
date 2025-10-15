@@ -5,17 +5,28 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    list-style: none;
     text-decoration: none;
-    transition: 0.3s linear;
-    font-family: 'helvetica', sans-serif !important;
+    font-family: $font;
+    list-style: none;
+    scrollbar-color: $color-p $white;
+    scrollbar-width: thin;
+}
+
+::selection{
+    background-color: $color-semo;
+    color: $white;
 }
 
 body {
     z-index: 0;
-    background-color: $wt !important;
+    background-color: $white !important;
     padding: 0;
     margin: 0;
+}
+
+.body-template {
+    overflow: hidden;
+    background-color: $color-semo;
 }
 
 html {
@@ -34,10 +45,7 @@ a {
 
 p {
     font-size: 0.9rem;
-    line-height: 1.6;
-    font-weight: normal;
-    letter-spacing: 1.5px;
-    margin-bottom: 0;
+    font-family: $font;
 }
 
 .button,
@@ -47,116 +55,71 @@ button {
     outline: 0;
     font-weight: 500;
     font-family: 'helvetica', sans-serif !important;
-    text-transform: uppercase !important;
 }
 
-input[type="color"] {
-    width: 40px !important;
-    height: 40px;
-    border: 0;
-    padding: 0;
-    border-radius: 50%;
-    padding: 0;
+
+.btn-border-semo {
+    color: $color-semo;
+    border: 1.3px solid $color-semo;
+}
+.bg-semo {
+    background-color: $color-semo;
+}
+.btn-bg-semo {
+    color: $white;
+    background-color: $color-semo;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    text-transform: uppercase;
-    font-weight: 700 !important;
-    letter-spacing: 6px;
-    line-height: 1.8 !important;
+.btn-bg-blue {
+    color: $white;
+    background-color: $color-p;
 }
-
-h2 {
-    font-size: 1.4rem;
+.btn-bg-white-blue {
+    background-color: $white;
+    color: $color-p;
 }
-
-@media(min-width:992px) {
-    h2 {
-        font-size: 2rem;
+.main-body{
+    background-color: $color-semo;
+    // background-image: url(../images/bg-blue.png);
+    // background-repeat: no-repeat;
+    // background-position: left top;
+    // background-size: 226vh;
+    // background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    .bg-maln{
+        position: fixed;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 120vh;
+        object-fit: cover;
     }
 }
-
 .btn-w {
-    font-size: .8rem;
-    padding: 12px 25px;
+    font-size: 0.8rem;
+    padding: 4px 20px;
     border-radius: 5px;
-    letter-spacing: 1px;
 }
-
-.btn-medium {
-    font-size: .9rem;
-    padding: 15px 25px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+@media(min-width:576px){
+    .btn-w {
+        padding: 10px 35px;
+    }
 }
 
 .btn-w-big {
     font-size: 0.9rem;
     padding: 15px 25px;
-    border-radius: 8px;
-    letter-spacing: 2px;
+    border-radius: 6px;
 }
 
-.btn-blue {
-    color: $white;
-    background-color: $primary-color;
-}
-
-.btn-white {
-    background-color: $white;
-    color: $color-p;
-}
-
-.btn-perple {
-    background-color: $color-p;
-    color: $white;
-}
-
-@media(min-width:992px) {
+@media(min-width:992px){
     .btn-w-big {
         font-size: 1rem;
-        padding: 23px 54px;
-        border-radius: 12px;
+        padding: 20px 40px;
     }
 }
-
-.btn-color-p {
-    color: $white;
-    background-color: $color-p;
-
-    &:hover {
-        background-color: $white;
-        color: $color-p;
-    }
-}
-
-.bg-perple {
-    background-color: $perpel !important;
-    color: $white;
-}
-
-.bg-perple-2 {
-    background-color: $perpel-2 !important;
-}
-
-.bg-color-p {
-    background-color: $color-p !important;
-    color: $white;
-}
-
-.btn-white-color-p {
-    background-color: $white;
-    color: $color-p;
-
-    &:hover {
-        background-color: $perpel;
-        color: $white;
-    }
-}
-
 
 .text-color-p {
     color: $color-p;

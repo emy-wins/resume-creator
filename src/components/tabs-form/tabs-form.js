@@ -1,97 +1,73 @@
-const prevBtns = document.querySelectorAll(".btn-prev");
-const nextBtns = document.querySelectorAll(".btn-next");
-const progress = document.getElementById("progress");
-const formSteps = document.querySelectorAll(".form-step");
-const progressSteps = document.querySelectorAll(".progress-step");
-
-let formStepsNum = 0;
-
-nextBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    formStepsNum++;
-    updateFormSteps();
-    updateProgressbar();
-  });
-});
-
-prevBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    formStepsNum--;
-    updateFormSteps();
-    updateProgressbar();
-  });
-});
-
-function updateFormSteps() {
-  formSteps.forEach((formStep) => {
-    formStep.classList.contains("form-step-active") &&
-      formStep.classList.remove("form-step-active");
-  });
-
-  formSteps[formStepsNum].classList.add("form-step-active");
-}
-
-function updateProgressbar() {
-  progressSteps.forEach((progressStep, idx) => {
-    if (idx < formStepsNum + 1) {
-      progressStep.classList.add("progress-step-active");
-    } else {
-      progressStep.classList.remove("progress-step-active");
-    }
-  });
-
-  const progressActive = document.querySelectorAll(".progress-step-active");
-
-  progress.style.width =
-    ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
-}
-
-
 
 $(document).ready(function () {
-  $("#colorPicker1").on("input change", function () {
-    let selectedColor = $(this).val();
-    $("#cv").css('color', selectedColor);
-  });
-  $("#colorPicker2").on("input change", function () {
-    let selectedColor = $(this).val();
-    $(".cv-bg").css('background-color', selectedColor);
-  });
-
-  $(".dwn").on("click", function () {
-    // Assume we have an SVG element in our HTML
-    let svgElem = document.querySelector("#vectorSVG");
-
-    // Convert SVG to XML
-    let serializer = new XMLSerializer();
-    let source = serializer.serializeToString(svgElem);
-
-    // Convert XML to Image and draw on canvas
-    let img = new Image();
-    img.src = "data:image/svg+xml;base64," + window.btoa(unescape(encodeURIComponent(source)));
-    let canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
-    let ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
-
-    // // Convert canvas to PDF (using the hypothetical saveAsPDF function)
-    // canvas.saveAsPDF('output.pdf');
-
-    window.jsPDF = window.jspdf.jsPDF;
-    const pdf = new jsPDF("portrait", "mm", "a4"); // Create PDF document
-    const imgWidth = 210; // A4 width in mm
-    const imgHeight = (canvas.height / canvas.width) * imgWidth; // Maintain aspect ratio
-    pdf.addImage(canvas, "PNG", 0, 0, imgWidth, imgHeight); // Add image to PDF
-    pdf.save("canvas.pdf");
-    img.onload = function () {
-    };
-  });
-
+  if ($(".btn-hid")) {
+    $(".btn-hid").on("click", function () {
+      let tabs = document.querySelector(".tabs-section");
+      let s_cv = document.querySelector('.section-cv');
+      tabs.classList.toggle('tabs-close');
+      s_cv.classList.toggle('w-100');
+    });
+  }
 })
 
+if (document.querySelector('.tab')) {
+  const tabs = document.querySelectorAll(".tab");
+  const panes = document.querySelectorAll(".tab-pane");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // Remove active from all
+      tabs.forEach(t => t.classList.remove("active"));
+      panes.forEach(p => {
+        p.classList.remove("active");
+      });
 
+      // Add active to selected
+      tab.classList.add("active");
+      const target = document.getElementById(tab.dataset.tab);
+      target.classList.add("active");
+    });
+  });
+}
 
+if (document.querySelector('#image-file')) {
+  const inputImage = document.getElementById('image-file');
+  const image = document.getElementById('image');
+  const preview = document.getElementById('preview');
+  let cropper;
 
+  // Load image from file input
+  inputImage.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      image.src = reader.result;
+      image.style.display = 'block';
 
+      // Destroy old cropper if exists
+      if (cropper) cropper.destroy();
 
+      // Initialize Cropper
+      cropper = new Cropper(image, {
+        aspectRatio: 1, // square crop
+        viewMode: 1,
+        preview: preview, // live preview in div
+      });
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+if (document.querySelectorAll(".myInput")) {
+  const inputs = document.querySelectorAll(".myInput");
+  inputs.forEach(input => {
+    input.addEventListener("input", function () {
+      // get the value of data-id attribute
+      const targetId = input.getAttribute("data-id");
+      const output = document.getElementById(targetId);
+      if (output) {
+        output.textContent = input.value || "";
+      }
+    });
+  });
+}
