@@ -46,6 +46,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    .skills-list{
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .skill-item {
+        display: inline-block;
+        background-color: #e9ecef;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
     h2 {
         font-size: 1.1rem;
         font-weight: normal;
@@ -92,22 +108,6 @@
                 height: 100%;
             }
         }
-    }
-
-    .add-sc {
-        width: 49%;
-        font-size: 1rem;
-        text-align: center;
-        font-weight: normal;
-        font-family: $font;
-        padding: 0;
-        background-color: #bed8ff;
-        color: $color-p;
-        grid-column: 1 / 3;
-        border-radius: 5px;
-        border: 2px dashed $color-p;
-        height: 50px;
-        margin-bottom: 10px;
     }
 
     /* Button */

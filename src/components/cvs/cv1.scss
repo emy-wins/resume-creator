@@ -8,7 +8,16 @@
     margin: 20px auto;
     margin-bottom: 40px;
     font-size: 12px;
+
     // transform: scale(40%) translate(-68%, -76%);
+    .s-cv-image {
+        background-image: url("../images/avatar.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-size: 70%;
+        background-color: #dbdbdb;
+    }
 
     .s-cv-image,
     p,
@@ -33,13 +42,14 @@
     strong {
         font-size: 12px;
     }
-    .s-cv-image#preview{
+
+    .s-cv-image#preview {
         max-width: 100%;
         width: 140px;
         height: 140px;
         border: 1.1px solid #ff3678;
         border-radius: 50%;
-        overflow: hidden!important;
+        overflow: hidden !important;
     }
 
     .s-cv-image img {
@@ -72,7 +82,7 @@
             font-size: 20px;
         }
 
-        .s-cv-image#preview{
+        .s-cv-image#preview {
             width: 160px;
             height: 160px;
         }

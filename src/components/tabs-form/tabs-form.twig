@@ -64,39 +64,35 @@
 									<textarea placeholder="adress" class="myInput" data-id="address-text" id="adress"></textarea>
 									<input type="email" id="email" data-id="email-text" class="myInput" placeholder="Email*"/>
 									<input type="text" id="linkedin" data-id="linkedin-text" class="myInput" placeholder="Linkedin"/>
-									<input type="text" id="website" data-id="website-text" class="myInput" placeholder="URL website"/>
 								</div>
 							</div>
-							<div class="d-none w-100">
+							<div class="w-100">
 								<h2>
 									Experiences
 								</h2>
 								<div class="mt-3">
-									<input type="text" placeholder="Job title *"/>
 									<input type="text" placeholder="Company name *"/>
 									<input type="date" placeholder="Date start *"/>
 									<input type="date" placeholder="Date end"/>
-									<input type="text" placeholder="Company Website *"/>
-									<textarea placeholder="Description"></textarea>
+									<textarea placeholder="Description job"></textarea>
 								</div>
 							</div>
-							<a href="javascript:void(0);" data-sc="experience" class="add-sc flx-center">+ Experiences</a>
-							<div class="d-none w-100">
+							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
+							<div class="w-100">
 								<h2>
 									Education
 								</h2>
 								<div class="mt-3">
-									<div><input type="text" placeholder="Title *"/></div>
 									<div><input type="text" placeholder="School name *"/></div>
 									<div><input type="date" placeholder="Date start *"/></div>
 									<div><input type="date" placeholder="Date end"/></div>
 									<div>
-										<textarea placeholder="Description"></textarea>
+										<textarea placeholder="Description diplome"></textarea>
 									</div>
 								</div>
 							</div>
-							<a href="javascript:void(0);" data-sc="education" class="add-sc flx-center">+ Education</a>
-							<div class="d-none w-100">
+							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
+							<div class="w-100">
 								<h2>
 									Certificates
 								</h2>
@@ -105,17 +101,18 @@
 									<div><input type="date" placeholder="Date"/></div>
 								</div>
 							</div>
-							<a href="javascript:void(0);" data-sc="certificates" class="add-sc flx-center">+ Certificates</a>
-							<div class="d-none w-100">
+							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
+							<div class="w-100">
 								<h2>
 									Skills
 								</h2>
 								<div class="mt-3">
-									<input type="text" placeholder="Title *"/>
+									<input type="text" id="skillInput" placeholder="Title *"/>
 								</div>
+								<ul id="skillsList" class="skillsList skills-list"></ul>
 							</div>
-							<a href="javascript:void(0);" data-sc="skills" class="add-sc flx-center">+ Skills</a>
-							<div class="d-none w-100">
+							<a href="javascript:void(0);" id="addSkillBtn" class="btn-w btn-bg-blue mb-3">Add</a>
+							<div class=" w-100">
 								<h2>
 									Languages
 								</h2>
@@ -134,24 +131,15 @@
 									</div>
 								</div>
 							</div>
-							<a href="javascript:void(0);" data-sc="languages" class="add-sc flx-center">+ Languages</a>
-							<div class="d-none w-100">
+							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
+							<div class=" w-100">
 								<h2>
 									Interests
 								</h2>
 								<div class="mt-3"><input type="text" placeholder="Title *"/>
 								</div>
 							</div>
-							<a href="javascript:void(0);" data-sc="interest" class="add-sc flx-center">+ Interests</a>
-							<div class="d-none w-100">
-								<h2>
-									Awards
-								</h2>
-								<div class="mt-3">
-									<input type="text" placeholder="Title *"/>
-								</div>
-							</div>
-							<a href="javascript:void(0);" data-sc="award" class="add-sc flx-center">+ Awards</a>
+							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
 							<div class="w-100 d-block mb-5">
 								<button class="btn-w btn-bg-semo w-100" name="save-resume">Save</button>
 							</div>
@@ -163,7 +151,7 @@
 								<img src="../assets/images/cv.jpg" alt=""/>
 							</a>
 							<a href="javascript:void(0);">
-								<img src="../assets/images/cv.jpg" alt=""/>
+								<img src="../assets/images/cv1.png" alt=""/>
 							</a>
 							<a href="javascript:void(0);">
 								<img src="../assets/images/cv.jpg" alt=""/>

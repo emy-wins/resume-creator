@@ -71,3 +71,32 @@ if (document.querySelectorAll(".myInput")) {
     });
   });
 }
+if (document.querySelector("#addSkillBtn")) {
+  // Add Skill
+  function updatePreview() {
+    // Update Skills
+    const skillsList = document.getElementById('previewSkills');
+    skillsList.innerHTML = '';
+    document.querySelectorAll('.skill-item').forEach(skill => {
+      const li = document.createElement('li');
+      li.className = 'skill-item';
+      li.textContent = skill.textContent;
+      skillsList.appendChild(li);
+    });
+  }
+
+  // Add Skill
+  document.getElementById('addSkillBtn').addEventListener('click', () => {
+    const skillInput = document.getElementById('skillInput');
+    const skill = skillInput.value.trim();
+    if (skill) {
+      const skillsList = document.getElementById('skillsList');
+      const li = document.createElement('li');
+      li.className = 'skill-item';
+      li.textContent = skill;
+      skillsList.appendChild(li);
+      skillInput.value = '';
+      updatePreview();
+    }
+  });
+}

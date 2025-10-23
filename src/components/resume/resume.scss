@@ -87,7 +87,7 @@
     z-index: 3;
     cursor: pointer;
     z-index: 3;
-    background-color: transparent;
+    background-color: $white;
     border: 2px solid $color-semo;
     border-radius: 50%;
     width: 40px;
@@ -96,10 +96,6 @@
     img {
         width: 23px;
         object-fit: contain;
-    }
-
-    &:hover {
-        background-color: $color-semo !important;
     }
 }
 
