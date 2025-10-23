@@ -83,6 +83,17 @@ if (document.querySelector("#addSkillBtn")) {
       li.textContent = skill.textContent;
       skillsList.appendChild(li);
     });
+
+
+    // Update Experiences
+    const experiencesList = document.getElementById('previewExperiences');
+    experiencesList.innerHTML = '';
+    document.querySelectorAll('.experience-item').forEach(exp => {
+      const div = document.createElement('div');
+      div.className = 'experience-item';
+      div.innerHTML = exp.innerHTML;
+      experiencesList.appendChild(div);
+    });
   }
 
   // Add Skill
@@ -96,6 +107,35 @@ if (document.querySelector("#addSkillBtn")) {
       li.textContent = skill;
       skillsList.appendChild(li);
       skillInput.value = '';
+      updatePreview();
+    }
+  });
+
+  // Add Experience
+  document.getElementById('addExperienceBtn').addEventListener('click', () => {
+    const companyName = document.getElementById('companyName').value.trim();
+    const datestart = document.getElementById('datestart').value.trim();
+    const datend = document.getElementById('datend').value.trim();
+    const descriptionJob = document.getElementById('descriptionJob').value.trim();
+
+
+    const date = new Date(datestart);
+    // Example: format to DD/MM/YYYY
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+
+    const formatted = `${day}/${month}/${year}`;
+
+
+    if (companyName || descriptionJob) {
+      const experiencesList = document.getElementById('experiencesList');
+      const li = document.createElement('li');
+      li.className = 'experience-item';
+      li.innerHTML = `<strong>${companyName}</strong><br>${formatted}-${datend}<br>${descriptionJob}`;
+      experiencesList.appendChild(li);
+      document.getElementById('companyName').value = '';
+      document.getElementById('descriptionJob').value = '';
       updatePreview();
     }
   });

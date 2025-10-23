@@ -46,13 +46,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .skills-list{
+    .experiences-list,
+    .skills-list {
         margin: 10px 0;
         padding: 10px;
         border: 1px solid #ddd;
         border-radius: 4px;
     }
 
+    .experience-item,
     .skill-item {
         display: inline-block;
         background-color: #e9ecef;
