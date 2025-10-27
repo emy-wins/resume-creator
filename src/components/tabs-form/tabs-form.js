@@ -89,10 +89,10 @@ if (document.querySelector("#addSkillBtn")) {
     const experiencesList = document.getElementById('previewExperiences');
     experiencesList.innerHTML = '';
     document.querySelectorAll('.experience-item').forEach(exp => {
-      const div = document.createElement('div');
-      div.className = 'experience-item';
-      div.innerHTML = exp.innerHTML;
-      experiencesList.appendChild(div);
+      const li = document.createElement('li');
+      li.className = 'experience-item';
+      li.innerHTML = exp.innerHTML;
+      experiencesList.appendChild(li);
     });
   }
 
@@ -124,7 +124,6 @@ if (document.querySelector("#addSkillBtn")) {
     const day = String(date.getDate()).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const year = date.getFullYear();
-
     const formatted = `${day}/${month}/${year}`;
 
 
