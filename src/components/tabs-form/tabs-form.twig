@@ -84,15 +84,16 @@
 									Education
 								</h2>
 								<div class="mt-3">
-									<div><input type="text" placeholder="School name *"/></div>
-									<div><input type="date" placeholder="Date start *"/></div>
-									<div><input type="date" placeholder="Date end"/></div>
+									<div><input type="text" id="schooleName" placeholder="School name *"/></div>
+									<div><input type="date" id="datein" placeholder="Date start *"/></div>
+									<div><input type="date" id="dateout" placeholder="Date end"/></div>
 									<div>
-										<textarea placeholder="Description diplome"></textarea>
+										<textarea id="descriptiondip" placeholder="Description diplome"></textarea>
 									</div>
 								</div>
+								<ul id="educationsList" class="education-list"></ul>
 							</div>
-							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
+							<a href="javascript:void(0);" id="addEducationBtn" class="btn-w btn-bg-blue mb-3">Add</a>
 							<div class="w-100">
 								<h2>
 									Certificates
@@ -118,7 +119,7 @@
 									Languages
 								</h2>
 								<div class="mt-3">
-									<div><input type="text" placeholder="Title *"/></div>
+									<div><input type="text" id="" placeholder="Title *"/></div>
 									<div>
 										<select>
 											<option value="Level">Level</option>
@@ -137,10 +138,12 @@
 								<h2>
 									Interests
 								</h2>
-								<div class="mt-3"><input type="text" placeholder="Title *"/>
+								<div class="mt-3">
+									<input type="text" id="interestInput" placeholder="Title *"/>
 								</div>
+								<ul id="interestsList" class="interestsList interests-list"></ul>
 							</div>
-							<a href="javascript:void(0);" class="btn-w btn-bg-blue mb-3">Add</a>
+							<a href="javascript:void(0);" id="addInterestBtn" class="btn-w btn-bg-blue mb-3">Add</a>
 							<div class="w-100 d-block mb-5">
 								<button class="btn-w btn-bg-semo w-100" name="save-resume">Save</button>
 							</div>

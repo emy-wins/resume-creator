@@ -46,6 +46,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    .education-list,
+    .interests-list,
     .experiences-list,
     .skills-list {
         margin: 10px 0;
@@ -54,6 +56,9 @@
         border-radius: 4px;
     }
 
+    .education-item,
+    .language-item,
+    .interest-item,
     .experience-item,
     .skill-item {
         display: inline-block;
