@@ -46,6 +46,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    .certificatesList,
+    .languagesList,
     .education-list,
     .interests-list,
     .experiences-list,
@@ -56,6 +58,8 @@
         border-radius: 4px;
     }
 
+    .certificate-item,
+    .language-item,
     .education-item,
     .language-item,
     .interest-item,

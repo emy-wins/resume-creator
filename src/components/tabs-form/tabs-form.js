@@ -94,7 +94,6 @@ function updatePreview() {
     educationsList.appendChild(li);
   });
 
-
   // Update Experiences
   const experiencesList = document.getElementById('previewExperiences');
   experiencesList.innerHTML = '';
@@ -103,6 +102,17 @@ function updatePreview() {
     li.className = 'experience-item';
     li.innerHTML = exp.innerHTML;
     experiencesList.appendChild(li);
+  });
+
+
+  // Update Certificates
+  const certificatesList = document.getElementById('previewCertif');
+  certificatesList.innerHTML = '';
+  document.querySelectorAll('.certificate-item').forEach(certificate => {
+    const li = document.createElement('li');
+    li.className = 'certificate-item';
+    li.innerHTML = certificate.innerHTML;
+    certificatesList.appendChild(li);
   });
 
   // Update Languages
@@ -142,6 +152,23 @@ if (document.querySelector("#addSkillBtn")) {
       updatePreview();
     }
   });
+
+  // Add Languages
+  document.getElementById('addlangueBtn').addEventListener('click', () => {
+    const languageInput = document.getElementById('langueInput');
+    const language = languageInput.value.trim();
+    const level = document.getElementById('langueLevel').value.trim();
+    if (language) {
+      const languagesList = document.getElementById('languagesList');
+      const li = document.createElement('li');
+      li.className = 'language-item';
+      li.textContent = language + ' : ' + level;
+      languagesList.appendChild(li);
+      languageInput.value = '';
+      updatePreview();
+    }
+  });
+
   // Add interest
   document.getElementById('addInterestBtn').addEventListener('click', () => {
     const interestInput = document.getElementById('interestInput');
@@ -203,6 +230,22 @@ if (document.querySelector("#addSkillBtn")) {
       EducationList.appendChild(li);
       document.getElementById('schooleName').value = '';
       document.getElementById('descriptiondip').value = '';
+      updatePreview();
+    }
+  });
+
+  // Add Certificates
+  document.getElementById('addCertificateBtn').addEventListener('click', () => {
+    const certificate = document.getElementById('certificateInput').value.trim();
+    const strdate = document.getElementById('strdate').value.trim();
+    const endate = document.getElementById('endate').value.trim();
+    if (certificate) {
+      const certificatesList = document.getElementById('certificatesList');
+      const li = document.createElement('li');
+      li.className = 'certificate-item';
+      li.innerHTML = `<strong>${certificate}</strong><br>${strdate}/${endate}`;
+      certificatesList.appendChild(li);
+      certificateInput.value = '';
       updatePreview();
     }
   });
