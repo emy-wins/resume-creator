@@ -5,15 +5,12 @@
 
 	.cv {
 		background: #fff;
+		padding: 0;
 	}
 	.cv p {
 		margin-bottom: 0;
 	}
 
-	.cv-infos {
-		align-items: center;
-		margin-bottom: 20px;
-	}
 	.s-cv-image#preview {
 		max-width: 100%;
 		width: 140px;
@@ -60,10 +57,13 @@
 	}
 	.colls-1 {
 		grid-column: 1 / 2;
+		background-color:rgb(255, 180, 205);
+		padding:20px;
 	}
 	.colls-3 {
 		grid-column: 2 / 5;
 		margin-left: 20px;
+		padding:20px;
 		padding-left: 40px;
 	}
 	.s-cv section {
@@ -77,27 +77,9 @@
 </style>
 <div class="s-cv">
 	<div class="cv" id="cv">
-		<div class="cv-infos grid-4">
-			<div class="s-cv-image colls-1" id="preview"></div>
-			<div class="colls-3">
-				<div class="d-flex">
-					<div style="width:49%;">
-						<h1 class="cv_title_h1" id="name-text" style="margin-buttom:10px;font-weight:bold;color: #ff3678;">IMANE BENKHADRA</h1>
-						<h2 class="cv_title" id="job-text" style="margin-buttom:10px;font-weight: 500;color: #ff3678;">Web Developper</h2>
-					</div>
-					<ul class="cv_text" style="font-size:11px;text-align:right;width:49%;margin-buttom:10px;">
-						<li class="phone" id="phone-text">0612345678</li>
-						<li class="email" id="email-text">benkhadra.iman@gmail.com</li>
-						<li class="adress" id="address-text">Etalia venis</li>
-						<li class="linkedin" id="linkedin-text">Imane benkhadra</li>
-						<li class="website" id="website-text">Imane benkhadra</li>
-					</ul>
-				</div>
-				<p id="description-text">gfhfg hfghg fhgfh fghfgh fghfghf fhfghfg hfghf fhfghfgh fghfghf fhfghfgh</p>
-			</div>
-		</div>
 		<div class="grid-4">
 			<div class="colls-1">
+				<div class="s-cv-image" id="preview"></div>
 				<section>
 					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Skills</h2>
 					<ul class="cv_text skillscv" id="previewSkills">
@@ -128,6 +110,20 @@
 				</section>
 			</div>
 			<div class="colls-3">
+				<div class="d-flex">
+					<div style="width:49%;">
+						<h1 class="cv_title_h1" id="name-text" style="margin-buttom:10px;font-weight:bold;color: #ff3678;">IMANE BENKHADRA</h1>
+						<h2 class="cv_title" id="job-text" style="margin-buttom:10px;font-weight: 500;color: #ff3678;">Web Developper</h2>
+					</div>
+					<ul class="cv_text" style="font-size:11px;text-align:right;width:49%;margin-buttom:10px;">
+						<li class="phone" id="phone-text">0612345678</li>
+						<li class="email" id="email-text">benkhadra.iman@gmail.com</li>
+						<li class="adress" id="address-text">Etalia venis</li>
+						<li class="linkedin" id="linkedin-text">Imane benkhadra</li>
+						<li class="website" id="website-text">Imane benkhadra</li>
+					</ul>
+				</div>
+				<p id="description-text">gfhfg hfghg fhgfh fghfgh fghfghf fhfghfg hfghf fhfghfgh fghfghf fhfghfgh</p>
 				<section>
 					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Experiences</h2>
 					<ul class="cv_text" id="previewExperiences">

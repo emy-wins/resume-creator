@@ -1,5 +1,5 @@
 .b-card {
-    max-width: 230px;
+    max-width: 300px;
     padding: 0 10px;
 }
 
@@ -14,31 +14,12 @@
     box-shadow: #00000022 0px 2px 4px, #00000024 0px 7px 13px -3px, #00000026 0px -3px 0px inset;
     width: 100%;
     border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
 
-    &__bg {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(360deg, #0d6efd, #ffffff52);
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 2;
-        opacity: 0;
-        pointer-events: none;
-
-        .card-buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            transform: scale(0.8);
-
-            .btn-w:hover {
-                color: $white;
-                background-color: $color-semo;
-            }
-        }
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
     }
 
     &__img {
@@ -60,10 +41,10 @@
         aspect-ratio: 1;
         clip-path: polygon(0 0, 100% 100%, 100% 0);
         width: 110px;
-        background-color: $perpel;
+        background: linear-gradient(273deg, #ea84ff, #5296ff);
 
         span {
-            color: $white;
+            color: #FFF;
             font-size: 0.8rem;
             font-family: 'helvetica', sans-serif !important;
             font-weight: normal;
@@ -96,18 +77,5 @@
     img {
         width: 23px;
         object-fit: contain;
-    }
-}
-
-
-//hover
-.card-resume:hover {
-    .card-resume__bg {
-        opacity: 1;
-        pointer-events: fill;
-
-        .card-buttons {
-            transform: scale(1);
-        }
     }
 }

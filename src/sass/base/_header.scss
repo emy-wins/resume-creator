@@ -2,7 +2,7 @@ header {
     background-color: transparent;
     position: fixed;
     left: 0;
-    top: 15px;
+    top: 14px;
     width: 100%;
     z-index: 1;
 
@@ -13,13 +13,13 @@ header {
 
     .row {
         box-shadow: 12px 10px 5px #00000054;
-        background-color: $white;
+        background: linear-gradient(45deg, #ea84ff, #5296ff);
         border-radius: 6px !important;
         margin: 0;
     }
 
     .header-logo {
-        width: 111px;
+        width: 140px;
         padding: 10px 0;
 
         img {
@@ -38,7 +38,7 @@ header {
 
         span {
             height: 3px;
-            background-color: $color-p;
+            background-color: #343a40;
             width: 30px;
             margin-bottom: 5px;
             border-radius: 5px;
@@ -83,13 +83,13 @@ header {
                 position: relative;
 
                 a {
-                    text-transform: capitalize;
-                    color: $color-text;
-                    font-weight: normal;
+                    color: #212529;
+                    font-weight: 500;
+                    font-size: 14px;
                 }
 
                 a:hover {
-                    color: $perpel;
+                    color: #fff;
                 }
             }
 
@@ -130,13 +130,12 @@ header {
                         padding: 8px 0;
 
                         a {
-                            color: $color-p;
-                            font-size: 0.9rem;
-                            text-transform: capitalize;
+                            color: #212529;
+                            font-size: 14px;
                         }
 
                         a:hover {
-                            color: $perpel;
+                            color: #5296ff;
                         }
                     }
                 }
@@ -187,7 +186,7 @@ header {
                         padding: 20px 0;
 
                         a {
-                            padding: 0 15px;
+                            padding: 0 6px;
                         }
                     }
 
@@ -205,6 +204,23 @@ header {
                             box-shadow: 0px 0px 14px $shadow;
                             height: auto;
                             min-width: 280px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    header {
+        .header-menu {
+            &__nav {
+                ul {
+
+                    li {
+                        a {
+                            padding: 0 15px;
                         }
                     }
                 }

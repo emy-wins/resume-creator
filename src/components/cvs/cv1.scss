@@ -1,12 +1,11 @@
 .cv {
-    box-shadow: 0 10px 15px #00000038;
+    box-shadow: 0 8px 20px #0000001f;
     width: 595px;
     padding: 20px;
     height: 842px;
     width: 16cm;
     height: 24.7cm;
     margin: 20px auto;
-    margin-bottom: 40px;
     font-size: 12px;
 
     // transform: scale(40%) translate(-68%, -76%);
@@ -18,15 +17,6 @@
         background-size: 70%;
         background-color: #dbdbdb;
     }
-
-    .s-cv-image,
-    p,
-    ul,
-    h2,
-    h1 {
-        cursor: pointer;
-    }
-
 
     h1 {
         font-size: 28px;
@@ -43,14 +33,7 @@
         font-size: 12px;
     }
 
-    .s-cv-image#preview {
-        max-width: 100%;
-        width: 140px;
-        height: 140px;
-        border: 1.1px solid #ff3678;
-        border-radius: 50%;
-        overflow: hidden !important;
-    }
+
 
     .s-cv-image img {
         width: 100%;
@@ -82,10 +65,10 @@
             font-size: 20px;
         }
 
-        .s-cv-image#preview {
-            width: 160px;
-            height: 160px;
-        }
+        // .s-cv-image#preview {
+        //     width: 160px;
+        //     height: 160px;
+        // }
     }
 }
 

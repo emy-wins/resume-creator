@@ -8,18 +8,11 @@
     text-decoration: none;
     font-family: $font;
     list-style: none;
-    scrollbar-color: $color-p $white;
-    scrollbar-width: thin;
-}
-
-::selection{
-    background-color: $color-semo;
-    color: $white;
 }
 
 body {
     z-index: 0;
-    background-color: $white !important;
+    background-color: #fff !important;
     padding: 0;
     margin: 0;
 }
@@ -57,52 +50,15 @@ button {
     font-family: 'helvetica', sans-serif !important;
 }
 
-
-.btn-border-semo {
-    color: $color-semo;
-    border: 1.3px solid $color-semo;
-}
-.bg-semo {
-    background-color: $color-semo;
-}
-.btn-bg-semo {
-    color: $white;
-    background-color: $color-semo;
-}
-
-.btn-bg-blue {
-    color: $white;
-    background-color: $color-p;
-}
-.btn-bg-white-blue {
-    background-color: $white;
-    color: $color-p;
-}
-.main-body{
-    background-color: $color-semo;
-    // background-image: url(../images/bg-blue.png);
-    // background-repeat: no-repeat;
-    // background-position: left top;
-    // background-size: 226vh;
-    // background-attachment: fixed;
-    position: relative;
-    z-index: 0;
-    .bg-maln{
-        position: fixed;
-        z-index: -1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 120vh;
-        object-fit: cover;
-    }
-}
 .btn-w {
     font-size: 0.8rem;
     padding: 4px 20px;
     border-radius: 5px;
+    background-color: #fff;
+    color: #212529;
 }
-@media(min-width:576px){
+
+@media(min-width:576px) {
     .btn-w {
         padding: 10px 35px;
     }
@@ -112,9 +68,11 @@ button {
     font-size: 0.9rem;
     padding: 15px 25px;
     border-radius: 6px;
+    background: linear-gradient(45deg, #ea84ff, #5296ff);
+    color: #fff;
 }
 
-@media(min-width:992px){
+@media(min-width:992px) {
     .btn-w-big {
         font-size: 1rem;
         padding: 20px 40px;

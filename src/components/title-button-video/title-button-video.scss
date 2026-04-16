@@ -1,19 +1,30 @@
 .s-banner-video {
-    padding: 140px 0 50px;
-    // background-image: url(../images/bg-blue.png);
-    // background-repeat: no-repeat;
-    // background-position: left top;
-    // background-size: 100%;
+    padding: 110px 0 50px;
+    position: relative;
+    z-index: 0;
+
+    .bg-maln {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
 
     h1 {
         font-size: calc(2.3rem + 1vw);
         font-weight: 700;
         line-height: 1.3;
-        color: $white;
+        color: #212529;
         text-align: left;
 
         span {
-            color: $color-semo;
+            background-image: linear-gradient(45deg, #ea84ff, #5296ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             font-weight: 700;
         }
     }
