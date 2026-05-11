@@ -7,10 +7,9 @@
 		background: #fff;
 		padding: 0;
 	}
-	.cv p {
+	p {
 		margin-bottom: 0;
 	}
-
 	.s-cv-image#preview {
 		max-width: 100%;
 		width: 140px;
@@ -19,169 +18,301 @@
 		border-radius: 50%;
 		overflow: hidden !important;
 	}
-	.cv-infos ul {
-		font-size: 12px;
-	}
 
-	.s-cv h2,
-	.s-cv h1,
-	.s-cv ul {
-		padding-left: 0;
-		margin-bottom: 10px;
-	}
-	.s-cv ul li p {
-		margin-bottom: 5px;
-	}
-	.s-cv ul li:before {
-		content: '✓ ';
-		color: #ff3678;
-	}
-	.s-cv ul li.phone:before {
-		content: "☎ "
-	}
-	.s-cv ul li.email:before {
-		content: "@ "
-	}
-	.s-cv ul li.adress:before {
-		content: "🏠︎ "
-	}
-	.s-cv ul li.linkedin:before {
-		content: "IN ";
-	}
-	.s-cv ul li.website:before {
-		content: "🌏︎ ";
-	}
-	.s-cv .grid-4 {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+
+	ul {
+		padding-left: 15px;
 	}
 	.colls-1 {
-		grid-column: 1 / 2;
-		background-color:rgb(255, 180, 205);
-		padding:20px;
+		background-color: rgb(255, 180, 205);
 	}
-	.colls-3 {
-		grid-column: 2 / 5;
-		margin-left: 20px;
-		padding:20px;
-		padding-left: 40px;
-	}
-	.s-cv section {
-		padding-bottom: 20px;
-	}
+
 	strong,
 	p,
 	span {
 		color: #4d4d4d;
 	}
+	table {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
 </style>
 <div class="s-cv">
 	<div class="cv" id="cv">
-		<div class="grid-4">
-			<div class="colls-1">
-				<div class="s-cv-image" id="preview"></div>
-				<section>
-					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Skills</h2>
-					<ul class="cv_text skillscv" id="previewSkills">
-						<li>HTML,css</li>
-						<li>Javascript</li>
-						<li>Jira Software</li>
-						<li>MYSQL/SQL Server</li>
-						<li>Jira Software</li>
-						<li>MYSQL/SQL Server</li>
-					</ul>
-				</section>
-				<section>
-					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Languages</h2>
-					<ul class="cv_text" id="previewLanguages">
-						<li>Arabe</li>
-						<li>fransh</li>
-						<li>English</li>
-					</ul>
-				</section>
-				<section>
-					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Interests</h2>
-					<ul class="cv_text" id="previewInterests">
-						<li>Travel</li>
-						<li>Driving</li>
-						<li>Reding</li>
-						<li>Sport</li>
-					</ul>
-				</section>
-			</div>
-			<div class="colls-3">
-				<div class="d-flex">
-					<div style="width:49%;">
-						<h1 class="cv_title_h1" id="name-text" style="margin-buttom:10px;font-weight:bold;color: #ff3678;">IMANE BENKHADRA</h1>
-						<h2 class="cv_title" id="job-text" style="margin-buttom:10px;font-weight: 500;color: #ff3678;">Web Developper</h2>
-					</div>
-					<ul class="cv_text" style="font-size:11px;text-align:right;width:49%;margin-buttom:10px;">
-						<li class="phone" id="phone-text">0612345678</li>
-						<li class="email" id="email-text">benkhadra.iman@gmail.com</li>
-						<li class="adress" id="address-text">Etalia venis</li>
-						<li class="linkedin" id="linkedin-text">Imane benkhadra</li>
-						<li class="website" id="website-text">Imane benkhadra</li>
-					</ul>
-				</div>
-				<p id="description-text">gfhfg hfghg fhgfh fghfgh fghfghf fhfghfg hfghf fhfghfgh fghfghf fhfghfgh</p>
-				<section>
-					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Experiences</h2>
-					<ul class="cv_text" id="previewExperiences">
-						<li>
-							<strong>Company name</strong>
-							<p>22/03/2020-22/03/2024</p>
-							<p>gfhfghfghgfhgfhfghfghfghfghf fhfghfghfghf fhfghfghfghfghf fhfghfgh</p>
-						</li>
-						<li>
-							<strong>Company name</strong>
-							<p>22/03/2020-22/03/2024</p>
-							<p>gfhfghfghgfhgfhfghfghfghfghf fhfghfghfghf fhfghfghfghfghf fhfghfgh</p>
-						</li>
-						<li>
-							<strong>Company name</strong>
-							<p>22/03/2020-22/03/2024</p>
-							<p>gfhfghfghgfhgfhfghfghfghfghf fhfghfghfghf fhfghfghfghfghf fhfghfgh</p>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;font-size: 1.5rem;">Education</h2>
-					<ul class="cv_text" id="previewEducations">
-						<li>
-							<strong>School name</strong>
-							<p>22/03/2020-22/03/2024</p>
-							<p>gfhfghfghgfhgfhfghfghfghfghf fhfghfghfghfghf</p>
-						</li>
-						<li>
-							<strong>School name</strong>
-							<p>22/03/2020-22/03/2024</p>
-							<p>gfhfghfghgfhgfhfghfghfghfghf fhfghfghfghfghf</p>
-						</li>
-						<li>
-							<strong>School name</strong>
-							<p>22/03/2020-22/03/2024</p>
-							<p>gfhfghfghgfhgfhfghfghfghfghf fhfghfghfghfghf</p>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2 class="cv_title" style="font-weight: 500;color: #ff3678;">Certificates</h2>
-					<ul class="cv_text" id="previewCertif">
-						<li>
-							<strong>School name</strong>
-							<p>22/03/2020-22/03/2024</p>
-						</li>
-						<li>
-							<strong>School name</strong>
-							<p>22/03/2020-22/03/2024</p>
-						</li>
-						<li>
-							<strong>School name</strong>
-							<p>22/03/2020-22/03/2024</p>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</div>
+
+		<table width="800" style="min-height:297mm">
+			<tr style="width:100%" width="800">
+				<td class="colls-1" style="padding:30px;vertical-align:top;">
+					<table>
+						<tr>
+							<td>
+								<div class="s-cv-image" id="preview"></div>
+								<h2 class="cv_title" style="font-size:30px;font-family: 'Arial', sans-serif;font-weight:bold;;color: #ff3678;text-align:left;">Skills</h2>
+								<ul class="cv_text skillscv" style="font-family: 'Arial', sans-serif;font-size:15px;" id="previewSkills">
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">HTML,css</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Javascript</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Jira Software</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">MYSQL/SQL Server</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Jira Software</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">MYSQL/SQL Server</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h2 class="cv_title" style="font-size:30px;font-family: 'Arial', sans-serif;font-weight:bold;;color: #ff3678;text-align:left;">Languages</h2>
+								<ul class="cv_text" id="previewLanguages">
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Arabe</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">fransh</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">English</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h2 class="cv_title" style="font-size:30px;font-family: 'Arial', sans-serif;font-weight:bold;;color: #ff3678;text-align:left;">Interests</h2>
+								<ul class="cv_text" id="previewInterests">
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Travel</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Driving</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Reding</li>
+									<li style="font-family: 'Arial', sans-serif;font-size:15px;">Sport</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td class="colls-3" style="vertical-align:top;" colspan="2">
+					<table style="width:100%;padding:30px;display: block;">
+						<tr style="margin-bottom: 15px;display:block;">
+							<td style="width: 550px;text-align: left;">
+								<h1 class="cv_title_h1" id="name-text" style="font-size:36px;font-family: 'Arial', sans-serif;margin-bottom:10px;font-weight:bold;color: #ff3678;">IMANE BENKHADRA</h1>
+								<h2 class="cv_title" id="job-text" style="font-size:30px;font-family: 'Arial', sans-serif;margin-bottom:10px;font-weight:bold;;color: #ff3678;">Web Developper</h2>
+							</td>
+							<td style="width: 250px;text-align: right;">
+								<table width="250">
+									<tr width="250" style="width:100%">
+										<td width="250" style="width:250px;vertical-align: middle;">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAC50lEQVR4AdSWPWhTURiG25sa0c1KB1FBEQTXWtFB0I6VpiVCXBwsuBV0KS3Fpe0ggrjVioPg5tIhkD+Ig8al/lERKYIOKg6CCBEH4Sbkx+cNufHc25ubmzZFLOft934/53vPPbnnJFbfP/r7f4QTiUR0cnLy8MTExIggrli3Gxf4xPF4/DjNZ2Kx2FPwHhRt2y7VarWv9Xr9tSBu23ZJOaAa1U7DjwYtZpPw+Pj4MFgALyqVygea36HBeXAC7APthnKqUe0KRZ8Q1yJu0GsY3zVawmNjY0MU3urv718Di+C0q3JrjhZxk15r6i0Np01DmOB0JBJ5TnAe7Aa9Huo5Lw1pqbnFNixCVljVMeyOjqbGijQtnCsd1L6R107E+LxHg0DdBTALvoOgcVVbfSSoAqHLpVLpLtu0wSJ/U7sXqzmnLMs6CT+A3QV+gQ3y94hdw7Yd5A9JuG2BEplMphCNRmer1epn/FdMymIfYm+zKL3xj7CPwRsdLexcKpVapSZwdBQOnL2NpIR/tJvP6ovK8XQHZcOA2qFmXdu+5L9YAwMDZyEFP9BkhutwDwu4SD7sSHBedXzmmODbl48tbiWTyY/pdHrUD5FIpGDbtl6WQZqEHUM8zH3N9eupWC6Xe6utbjXkcOuKa4GV6YWaUgFPvQR0nJaavvhok7tyxKY019uPeGu4hInqijNB6O/QG+544oLpO9ywZi/xVsor3Ep4CZ/3OT2BrHLigrhi4rLywyC0MNv8zIEa+3HFlAuD0MJqxtbqXhftExcaDv9MjttxdCWsy93pKC6YvsPD2K6EwzQMW9OVsLmd4oIjZHInFmS7EvZurdcPEvLmvMLr3gLH56gsOFDMjyumXBu8M+MuYSY+MZO95By1ZbOfS5jvUV3s182CXnBEV3kHHpi9XMJKcIkvl8vl/dy1Z5jQuI+3avlhMAIGEb2k3iY2CSuZz+eLfIO8ZEJhO8hms+vgp3p64SvsLdoJ/w8AAAD//2l69dsAAAAGSURBVAMAc5jyTGUIA9AAAAAASUVORK5CYII=" width="15" height="15" style="width:15px;height:15px;margin-right:3px;"/>
+											<span class="phone" style="font-family: 'Arial', sans-serif;font-size:13px;text-align:right;line-height:1;" id="phone-text">
+												0612345678
+											</span>
+										</td>
+									</tr>
+									<tr width="250" style="width:100%">
+										<td width="250" style="width:250px;vertical-align: middle;">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACVUlEQVR4AeyVv2tTURiGkxtzby4UB2mdVLroKIJCVSy4hUBIsljFSdFBl1bwD9BRZ6kguIiKm5gfZBR1sC4iWFBxdZGSru29aZLb5z3NDU1T0rRN0iEt5+35vu+c8z7nfE1bK3JAX4fgoTW+1epkMnksnU7fy2QyjwcheYsRvqwFtm37RzQanQ+C4FEwAMnbcZzvbeBsNnuSwinUughxv4fFgyZTqdQJGRsQt4kpGYZ49RFxDFjBsDWi4Gq16tFqX+Ln3WDu62h6yn+1yYqYVpfL5f+JRGIc2iyfvEXmAK2g/Q55YBnIcxbGcbFkasC5XG7S9/0yO7xarTbFfJHFN0i3lOrEvQ7t9fFQF18zX2h6emKIJSMDVsCGaVryKh6PV8hvNhqNZ9xwnPpD8t8oQiwzhR0K15h/oQeu605YljXPxtvylDf1aXIzWmCT8Y3FMQ7cQYue531kXqWsLkxx+B2xOiDpZZJ5HWtvOXse4GXOVDn7icv/JL5FfYxzbaMDrNVwI2bniJ9Tq2BwF71QF8jn0F/0B80Bm2B+yf77ACs6Q3yWmrrUAVV9W7AWJAzizA5yia/zggWMF8htLnApFotdoe5Q+0btK5pB2u9Q11nS7UdX8JYjR8mj6Ax6Cmy5Xq9XeNkT8tNIa9pDuPPYDTh0swlcpL/vkmLVKPU+9gLu3b3LzhEF8wnU72OXxvRvKWSZVufz+X98OpcorvUP0e4kbzHE0ooBK0DX0Af0eRAC+h5fMZgiG/+dFBUKhS+lUmmmWCxeHZBuiCGWtPnFyoem0QOvAwAA///iXDJmAAAABklEQVQDAAv5rEymrlpuAAAAAElFTkSuQmCC" width="15" height="15" style="width:15px;height:15px;margin-right:3px;">
+											<span class="email" style="font-family: 'Arial', sans-serif;font-size:13px;text-align:right;line-height:1;" id="email-text">
+												benkhadra.iman@gmail.com
+											</span>
+										</td>
+									</tr>
+									<tr width="250" style="width:100%">
+										<td width="250" style="width:250px;vertical-align: middle;">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADDElEQVR4AayWS2gTURSGk9CkBR/4AAtFEB9QiiIKLly6K9G0aalFUVAQLF2oRRBB3bvRhQ+qG/daon2khW60uHBTEatSu3EhIjbR0qJuTMjL76STmLlz70zGNJx/7rnn9WfmnntnQoE6f9FotLmrq6sPPAEL4LeFhVgs9hi9p7+/P1JnuYAnsRSj8KWmpqYvFH0KToAOsMFCRzAYPIk+lslkPhM7ODAwEGbuKq7E3d3d7RT7QOG7VGkFXtJG7MNUKjXLE9jpFmwkJvFwqVR6T3I78CsHSXhHjb2MWtES9/b2biP6GWgG/ysbSRxnqdYzOkRLnM/nHxDZBhqVPdls9pauiIOY5jhCYB9YE2G5BumV/WoxBzHNcU4N0syl4YaJHcY3D1ylWCyeVgNU4iABR4FRuIOrk5OTB5LJ5AUButzNDWPCqiO6Ovy72ojj8fh2XFuBViBNTk1NyZqVagJKkN9kPgO0wpPZp+5tGzGFvfbquLYyRnITDCYJptPpXbVOlXhdrVPVQ6HQsmqrzPEtVnTdWCgUZItWXTZinL+qHo1Ck8jBoPEEAvgOaR2WkSP3p6WWBxsx/3qpbDVcWKshDhdHD7BdWvFdNKSVzSzFj7JiXWzENM437N+BSTbncjk5h3s6Ozu3CCH7/jhFZ0nYBEyyyA6w1bURW1kvrVE7cGe7cYxFIpFlCNPMpal2YHOTF6rTQczjfqQGNTrnz91TaziIJyYmnhP0FqyVzPCY36jFHMRWwBnGPGhU8izHoK6IlpiT6CMJ13UJPm3XaNhPuhwtsQSSIEej8aSSGA+McwO3TTFGYkloaWk5xej59iFGlXkrV7VX567EiUTiD10ub6uVaoa3siI5kusW6kosiXT5V9Y7jl4AXlKQWMnxCvQklgKs9yvGK8BLLluxXnHe39WVCjTKHfQRYJIRYu6bnKq9rjuuJPEReBZ9DqgyZ/lUu3Hui3h6ejobDoePUa32LbYkNvFhr1t8EUvV0dHRFA0UQ5dGyokuNua+xDexVKeBXkM4xLY5L7rY/OIvAAAA//+55zFLAAAABklEQVQDADM6EuSikwrVAAAAAElFTkSuQmCC" width="15" height="15" style="width:15px;height:15px;margin-right:3px;display:inline-block;">
+											<span class="adress" style="font-family: 'Arial', sans-serif;font-size:13px;text-align:right;line-height:1;" id="address-text">
+												Etalia venis
+											</span>
+										</td>
+									</tr>
+									<tr width="250" style="width:100%">
+										<td width="250" style="width:250px;vertical-align: middle;">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACnElEQVR4AcSVz4vTQBTHk6nUgnjVi+IPWG9SBBUR1MVD2dI2ngr+B4IsLoj/gyehuAf16H9gfyPoIWcXf6zKroqwCt7VUxdt4mdCGpLJTEzZRsv7dt689+Z95yUzL8L6T7+AuNFonGw2m51WqzUCDx3HOVP0fgREV4QQW7Ztr0FWBzd8338B+Qp6YSIg7JC9DOJSgvx+3LBoXUBw2pB0qV6v7zf49myW7/iVIcuX8Xi8a/Dt2SyJ71D1LyXTlPkqKExEv993Ia7CsM77for+YDqdnsU+wFaYyIqt4XC4BdGtXq+3MhgMbo5Go9eFMYaJA+JQ/6eDoHlc4i77GjyK7wT/O6CLey7jarXaAe7+KjEu+Ap2mX9gfMK41m63E1dW3mNfLtTAZFdDfbpetVKpbHM+1nFeBkdBmfkpxmuMnclkIjd+gXkgi3jUB8NDeSTIaP5bwuXKTTJasoHYUtHAZFdDz2M4DPJImU0+loGLqFjmmWEHZRP8BiapUvWyKJVK2srYmdZuyLZD/Dmu5AlQ5Z0eJ+4T0AofpZagWWgPEYtVu/HpkMihB2zMWOgF31h/fTZXR3wXjcnUYCoqqbZwvtHtdt+GejRA/pLJe5ASiI/lJibYFPszlTk0sOZzqCYGijhkSpYIDCemikN3euAVfE9bA4uNT2jJ2ZV6uLTEVKXGBZnlX4ZPZHUuuTYCG9FuMAqYT/GzGkgiled52ooTQfkndu4qqHiRxFbuR00xuTdJ7N/En6eBaCvmSaiNJiLN8PnznOp9UcaYknFyrQyfEBwaL5YnUlmkVqIlzqjKyvB5go/ED9hcFSz6iC0uz5ik4rC9ASbZxpFaQ1GuoLlv8kVZVoH9Hosiwe+AVBy221GQopDjLv7UGvr41T8AAAD//9TIYTcAAAAGSURBVAMAeB4tTFEROjMAAAAASUVORK5CYII=" width="15" height="15" style="width:15px;height:15px;margin-right:3px;display:inline-block;">
+											<span class="linkedin" style="font-family: 'Arial', sans-serif;font-size:13px;text-align:right;line-height:1;" id="linkedin-text">
+												Imane benkhadra
+											</span>
+										</td>
+									</tr>
+									<tr width="250" style="width:100%">
+										<td width="250" style="width:250px;vertical-align: middle;">
+											<img src="data:image/png;base64,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" width="15" height="15" style="width:15px;height:15px;margin-right:3px;">
+											<span class="website" style="font-family: 'Arial', sans-serif;font-size:13px;text-align:right;line-height:1;" id="website-text">
+												Imane benkhadra
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" width="800">
+								<p id="description-text" style="font-family: 'Arial', sans-serif;font-size:15px;text-align:left;">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									                                printer took a galley of type and scrambled it to make a type specimen book. It has
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									                                survived not only five centuries, but also the leap into electronic typesetting,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+								</p>
+							</td>
+						</tr>
+					</table>
+					{# Experiences #}
+
+					<table style="width:100%;padding:0 30px;display:block;margin-bottom:10px;">
+						<tr>
+							<td>
+								<h2 class="cv_title" style="font-size:30px;font-family: 'Arial', sans-serif;font-weight:bold;;color: #ff3678;text-align:left;">Experiences</h2>
+							</td>
+						</tr>
+						<tr>
+							<td class="cv_text" id="previewExperiences">
+								<table style="width:100%;display:block;margin-bottom:20px;">
+									<tr>
+										<td colspan="2">
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">Lorem Ipsum is simply dummy text of the printing and</strong>
+										</td>
+									</tr>
+									<tr style="vertical-align: middle;margin-bottom:10px;">
+										<td>
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">Company name</strong>
+										</td>
+										<td>
+											<p style="font-family: 'Arial', sans-serif;text-align:right;font-size:13px;">22/03/2020-22/03/2024</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p style="font-family: 'Arial', sans-serif;font-size:15px;">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+											</p>
+										</td>
+									</tr>
+								</table>
+								<table style="width:100%;display:block;margin-bottom:20px;">
+									<tr>
+										<td colspan="2">
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">Lorem Ipsum is simply dummy text of the printing and</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;margin-bottom:10px;">Company name</strong>
+										</td>
+										<td>
+											<p style="font-family: 'Arial', sans-serif;text-align:right;font-size:13px;">22/03/2020-22/03/2024</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p style="font-family: 'Arial', sans-serif;font-size:15px;">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					{# etude #}
+					<table style="width:100%;padding:0 30px;display:block;margin-bottom:10px;">
+						<tr>
+							<td>
+								<h2 class="cv_title" style="font-size:30px;font-family: 'Arial', sans-serif;font-weight:bold;;color: #ff3678;text-align:left;">Education</h2>
+							</td>
+						</tr>
+						<tr>
+							<td class="cv_text" id="previewEducations">
+								<table style="width:100%;display:block;margin-bottom:20px;">
+									<tr>
+										<td colspan="2">
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">Lorem Ipsum is simply dummy text of the printing and</strong>
+										</td>
+									</tr>
+									<tr style="vertical-align: middle;margin-bottom:10px;">
+										<td>
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">School name</strong>
+										</td>
+										<td>
+											<p style="font-family: 'Arial', sans-serif;text-align:right;font-size:13px;">22/03/2020-22/03/2024</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p style="font-family: 'Arial', sans-serif;font-size:15px;">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+											</p>
+										</td>
+									</tr>
+								</table>
+								<table style="width:100%;display:block;margin-bottom:20px;">
+									<tr>
+										<td colspan="2">
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">Lorem Ipsum is simply dummy text of the printing and</strong>
+										</td>
+									</tr>
+									<tr style="vertical-align: middle;margin-bottom:10px;">
+										<td>
+											<strong style="font-family: 'Arial', sans-serif;font-size:15px;">School name</strong>
+										</td>
+										<td>
+											<p style="font-family: 'Arial', sans-serif;text-align:right;font-size:13px;">22/03/2020-22/03/2024</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p style="font-family: 'Arial', sans-serif;font-size:15px;">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					{# Certificates #}
+					<table style="width:100%;padding:0 30px;display:block;margin-bottom:10px;">
+						<tr>
+							<td>
+								<h2 class="cv_title" style="font-size:30px;font-family: 'Arial', sans-serif;font-weight:bold;;color: #ff3678;text-align:left;">Certificates</h2>
+							</td>
+						</tr>
+						<tr>
+							<td class="cv_text" id="previewCertif">
+								<table style="width:100%;display:block;margin-bottom:20px;">
+									<tr style="vertical-align: middle;">
+										<td colspan="2">
+											<strong style="font-family: 'Arial',sans-serif;font-size:15px;">Lorem Ipsum is simply dummy text of the printing and</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p style="font-family: 'Arial', sans-serif;font-size:15px;">
+												Lorem Ipsum is simply dummy text of the printing and.
+											</p>
+										</td>
+										<td>
+											<p style="font-family: 'Arial',sans-serif;text-align:right;font-size:13px;margin-left:10px;">22/03/2020-22/03/2024</p>
+										</td>
+									</tr>
+								</table>
+
+								<table style="width:100%;display:block;margin-bottom:20px;">
+									<tr style="vertical-align: middle;">
+										<td colspan="2">
+											<strong style="font-family: 'Arial',sans-serif;font-size:15px;">Lorem Ipsum is simply dummy text of the printing and</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p style="font-family: 'Arial', sans-serif;font-size:15px;">
+												Lorem Ipsum is simply dummy text of the printing and.
+											</p>
+										</td>
+										<td>
+											<p style="font-family: 'Arial',sans-serif;text-align:right;font-size:13px;margin-left:10px;">22/03/2020-22/03/2024</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table>
+
 	</div>
 </div>

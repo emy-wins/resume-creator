@@ -9,7 +9,7 @@
     box-shadow: 11px 2px 11px #00000047;
     position: relative;
     z-index: 1;
-    background-color: $color-p;
+    background: linear-gradient(45deg, #ea84ff, #5296ff);
     height: 50px;
 }
 
@@ -98,6 +98,7 @@
             margin: 15px 0;
             height: 80px;
             width: 111px;
+
             &:hover {
                 background-color: $color-semo;
             }
@@ -226,7 +227,7 @@
     text-align: center;
     padding: 0px 10px;
     cursor: pointer;
-    color: $color-semo;
+    color: #ea84ff;
     font-weight: normal;
     transition: background 0.3s;
     display: flex;
@@ -239,12 +240,12 @@
 .tab svg {
     width: 15px;
     height: 15px;
-    fill: $color-semo;
+    fill: #5296ff;
 }
 
 .tab.active {
-    background-color: $color-semo;
-    color: $white;
+    background-color: #5296ff;
+    color: #fff;
 }
 
 .tab.active svg {
